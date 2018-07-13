@@ -1,0 +1,3 @@
+[submodule "arm-ada-ng"]
+	path = arm-ada-ng
+	url = https://github.com/Vezde/arm-ada-ng.git
