@@ -59,6 +59,13 @@ __Previews/
 History/
 Project Logs for*/
 
+# Inventor
+OldVersions/
+
+# Eagle
+*.s#*
+*.b#*
+
 # Miscelaneous
 *.zip
 *.tgz
@@ -66,3 +73,14 @@ Project Logs for*/
 *.cab
 *.tar.*
 *.7z
+*.chm
+*.pdf
+*.bz2
+*.xz
+*.gz
+
+# Projects not included
+software/EntretienAuto/PDFsharp/testing/
+software/EntretienAuto/PDFsharp/samples/
+software/EntretienAuto/PDFsharp/dev/
+software/2017_COM_4IS/Docs/

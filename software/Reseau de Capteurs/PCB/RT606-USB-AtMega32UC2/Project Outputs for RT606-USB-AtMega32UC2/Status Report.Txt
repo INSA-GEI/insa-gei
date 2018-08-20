@@ -1,0 +1,10 @@
+Output: Mixed Sim
+Type  : AdvSimNetlist
+From  : Project [RT606-USB-AtMega32UC2.PrjPCB]
+   Generated File[RT606-USB-AtMega32UC2.nsx]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 17:21:54 On 12/12/2011

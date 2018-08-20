@@ -1,0 +1,3 @@
+Record=TopLevelDocument|FileName=Carte Keil RZO Capteurs.SchDoc
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Carte Keil RZO Capteurs.SchDoc|Designator=Carte|SchDesignator=Carte|FileName=Carte.SchDoc|SymbolType=Normal|RawFileName=Carte.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|Record=SheetSymbol|SourceDocument=Carte Keil RZO Capteurs.SchDoc|Designator=MCU|SchDesignator=MCU|FileName=MCU.SchDoc|SymbolType=Normal|RawFileName=MCU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

@@ -1,0 +1,6 @@
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/PdfSharp.Forms.PagePreview.resources
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/PdfSharp.Forms.PagePreviewCanvas.resources
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/PdfSharp.Resources.Messages.resources
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/PdfSharp.Resources.Messages.de.resources
+/home/seb/Travail/projets-gei/trunk/Entretien/PDFsharp/code/PdfSharp/obj/Debug/de/PdfSharp.resources.dll

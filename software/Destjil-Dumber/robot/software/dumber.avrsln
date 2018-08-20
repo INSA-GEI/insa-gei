@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{D1100916-62DA-4D80-A9B4-55A1E7CCEEB3}") = "dumber", "dumber\dumber.avrgccproj", "{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_sim|AVR = Debug_sim|AVR
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Debug_sim|AVR.ActiveCfg = Debug_sim|AVR
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Debug_sim|AVR.Build.0 = Debug_sim|AVR
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Debug|AVR.Build.0 = Debug|AVR
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Release|AVR.ActiveCfg = Release|AVR
+		{9F18869B-7FC4-4D7D-8841-EEF24BA6600A}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

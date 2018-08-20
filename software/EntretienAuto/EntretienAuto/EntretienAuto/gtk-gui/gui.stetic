@@ -1,0 +1,684 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stetic-interface>
+  <configuration>
+    <images-root-path>..</images-root-path>
+    <target-gtk-version>2.12</target-gtk-version>
+  </configuration>
+  <import>
+    <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
+    <widget-library name="../bin/Debug/EntretienAuto.exe" internal="true" />
+  </import>
+  <icon-factory>
+    <icon-set id="Voiture">
+      <source>
+        <property name="Image">file:./voiture.png</property>
+      </source>
+    </icon-set>
+    <icon-set id="Entretien">
+      <source>
+        <property name="Image">file:./entretien.png</property>
+      </source>
+    </icon-set>
+    <icon-set id="Attribut">
+      <source>
+        <property name="Image">file:./attribut.png</property>
+      </source>
+    </icon-set>
+  </icon-factory>
+  <widget class="Gtk.Window" id="FenetrePrincipale" design-size="892 556">
+    <action-group name="Default">
+      <action id="VoitureAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">Voiture</property>
+        <property name="Tooltip" translatable="yes">Information sur le vehicule</property>
+      </action>
+      <action id="EntretienAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">Entretien</property>
+        <property name="Tooltip" translatable="yes">Ajouter une fiche d'entretien</property>
+      </action>
+      <action id="CarnetsDEntretienAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Carnets d'entretien</property>
+        <property name="ShortLabel" translatable="yes">Fichier</property>
+      </action>
+      <action id="SystemeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Systeme</property>
+        <property name="ShortLabel" translatable="yes">Vehicules</property>
+      </action>
+      <action id="ImprimerAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Imprimer</property>
+        <property name="ShortLabel" translatable="yes">Entretiens</property>
+      </action>
+      <action id="AideAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Aide</property>
+        <property name="ShortLabel" translatable="yes">Aide</property>
+      </action>
+      <action id="NouveauCarnetAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Nouveau carnet ...</property>
+        <property name="ShortLabel" translatable="yes">Ouvrir</property>
+      </action>
+      <action id="OuvrirUnCarnetAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Ouvrir un carnet ...</property>
+        <property name="ShortLabel" translatable="yes">Quitter</property>
+      </action>
+      <action id="ChangerLaBaseDAttributsAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Changer la base d'attributs ...</property>
+        <property name="ShortLabel" translatable="yes">Ajouter un vehicule</property>
+      </action>
+      <action id="ConfigurerAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Configurer ...</property>
+        <property name="ShortLabel" translatable="yes">Supprimer un vehicule</property>
+      </action>
+      <action id="AjouterUnAttributAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Ajouter un attribut</property>
+        <property name="ShortLabel" translatable="yes">Ajouter un attribut</property>
+      </action>
+      <action id="SupprimerUnAttributAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Supprimer un attribut</property>
+        <property name="ShortLabel" translatable="yes">Supprimer un attribut</property>
+      </action>
+      <action id="ImprimerLaFicheSelectionneAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Imprimer la fiche selectionnée</property>
+        <property name="ShortLabel" translatable="yes">Ajouter une fiche</property>
+      </action>
+      <action id="ImprimerLEnsembleDuCarnetAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Imprimer l'ensemble du carnet</property>
+        <property name="ShortLabel" translatable="yes">Supprimer une fiche</property>
+      </action>
+      <action id="ConfigurerLImrimanteAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Configurer l'imrimante ...</property>
+        <property name="ShortLabel" translatable="yes">Ajouter un entretien periodique</property>
+      </action>
+      <action id="SupprimerUnEntretienPeriodiqueAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Supprimer un entretien periodique</property>
+        <property name="ShortLabel" translatable="yes">Supprimer un entretien periodique</property>
+      </action>
+      <action id="AttributAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes" />
+        <property name="StockId">Attribut</property>
+        <property name="Tooltip" translatable="yes">Gerer les attributs ...</property>
+      </action>
+      <action id="EnregistrerLeCarnetAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Enregistrer le carnet</property>
+        <property name="ShortLabel" translatable="yes">Enregistrer le carnet</property>
+      </action>
+      <action id="EnregistrerSousAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Enregistrer sous ...</property>
+        <property name="ShortLabel" translatable="yes">Enregistrer sous ...</property>
+      </action>
+      <action id="QuitterAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Quitter</property>
+        <property name="ShortLabel" translatable="yes">Quitter</property>
+      </action>
+      <action id="IndexAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">Index</property>
+        <property name="ShortLabel" translatable="yes">Index</property>
+        <signal name="Activated" handler="OnIndexActionActivated" />
+      </action>
+      <action id="AProposDeAction">
+        <property name="Type">Action</property>
+        <property name="Label" translatable="yes">A propos de ...</property>
+        <property name="ShortLabel" translatable="yes">A propos de ...</property>
+        <signal name="Activated" handler="OnAProposDeActionActivated" />
+      </action>
+    </action-group>
+    <property name="MemberName" />
+    <property name="Title" translatable="yes">EntretienAuto</property>
+    <property name="WindowPosition">CenterOnParent</property>
+    <signal name="DeleteEvent" handler="OnDeleteEvent" />
+    <child>
+      <widget class="Gtk.VBox" id="vbox1">
+        <property name="MemberName" />
+        <property name="Spacing">6</property>
+        <child>
+          <widget class="Gtk.MenuBar" id="menuPrincipal">
+            <property name="MemberName" />
+            <node name="menuPrincipal" type="Menubar">
+              <node type="Menu" action="CarnetsDEntretienAction">
+                <node type="Menuitem" action="NouveauCarnetAction" />
+                <node type="Menuitem" action="OuvrirUnCarnetAction" />
+                <node type="Menuitem" action="EnregistrerLeCarnetAction" />
+                <node type="Menuitem" action="EnregistrerSousAction" />
+                <node type="Menuitem" action="QuitterAction" />
+              </node>
+              <node type="Menu" action="SystemeAction">
+                <node type="Menuitem" action="ChangerLaBaseDAttributsAction" />
+                <node type="Menuitem" action="ConfigurerAction" />
+              </node>
+              <node type="Menu" action="ImprimerAction">
+                <node type="Menuitem" action="ImprimerLaFicheSelectionneAction" />
+                <node type="Menuitem" action="ImprimerLEnsembleDuCarnetAction" />
+                <node type="Menuitem" action="ConfigurerLImrimanteAction" />
+              </node>
+              <node type="Menu" action="AideAction">
+                <node type="Menuitem" action="IndexAction" />
+                <node type="Menuitem" action="AProposDeAction" />
+              </node>
+            </node>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.HBox" id="hbox1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+            <child>
+              <widget class="Gtk.Toolbar" id="BarreOutils">
+                <property name="MemberName" />
+                <property name="Orientation">Vertical</property>
+                <property name="ShowArrow">False</property>
+                <node name="BarreOutils" type="Toolbar">
+                  <node type="Toolitem" action="VoitureAction" />
+                  <node type="Toolitem" action="EntretienAction" />
+                  <node type="Toolitem" action="AttributAction" />
+                </node>
+              </widget>
+              <packing>
+                <property name="Position">0</property>
+                <property name="AutoSize">True</property>
+                <property name="Expand">False</property>
+                <property name="Fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.VBox" id="vbox2">
+                <property name="MemberName" />
+                <property name="Spacing">6</property>
+                <child>
+                  <widget class="Gtk.ScrolledWindow" id="scrolledwindow2">
+                    <property name="MemberName" />
+                    <property name="CanFocus">True</property>
+                    <property name="ShadowType">In</property>
+                    <child>
+                      <widget class="Gtk.TreeView" id="EntretienTreeview">
+                        <property name="MemberName" />
+                        <property name="CanFocus">True</property>
+                      </widget>
+                    </child>
+                  </widget>
+                  <packing>
+                    <property name="Position">0</property>
+                    <property name="AutoSize">True</property>
+                  </packing>
+                </child>
+              </widget>
+              <packing>
+                <property name="Position">1</property>
+                <property name="AutoSize">True</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="AutoSize">True</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Statusbar" id="statusbar1">
+            <property name="MemberName" />
+            <property name="Spacing">6</property>
+          </widget>
+          <packing>
+            <property name="Position">2</property>
+            <property name="AutoSize">True</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="FicheVehicule" design-size="746 341">
+    <property name="MemberName" />
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <widget class="Gtk.Fixed" id="fixed1">
+            <property name="MemberName" />
+            <property name="HasWindow">False</property>
+            <child>
+              <widget class="Gtk.Label" id="label1">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Marque: </property>
+              </widget>
+              <packing>
+                <property name="X">23</property>
+                <property name="Y">15</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBoxEntry" id="comboboxentryMarque">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="X">89</property>
+                <property name="Y">9</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label2">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Modele:</property>
+              </widget>
+              <packing>
+                <property name="X">25</property>
+                <property name="Y">52</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBoxEntry" id="comboboxentryModele">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="X">89</property>
+                <property name="Y">47</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label3">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Immatriculation:</property>
+              </widget>
+              <packing>
+                <property name="X">23</property>
+                <property name="Y">95</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryImmatriculation">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">143</property>
+                <property name="Y">90</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label5">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Date de premiere mise en circulation:</property>
+                <property name="Wrap">True</property>
+              </widget>
+              <packing>
+                <property name="X">310</property>
+                <property name="Y">14</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label4">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Date d'achat:</property>
+              </widget>
+              <packing>
+                <property name="X">469</property>
+                <property name="Y">49</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label6">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Date de vente:</property>
+              </widget>
+              <packing>
+                <property name="X">463</property>
+                <property name="Y">90</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryPMC">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">9</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryAchat">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">47</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryVente">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">85</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label7">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Numero MIN:</property>
+              </widget>
+              <packing>
+                <property name="X">47</property>
+                <property name="Y">137</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryMIN">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">143</property>
+                <property name="Y">133</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBoxEntry" id="comboboxentryEnergie">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="X">116</property>
+                <property name="Y">212</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label9">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Energie:</property>
+              </widget>
+              <packing>
+                <property name="X">50</property>
+                <property name="Y">216</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label8">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Couleur:</property>
+              </widget>
+              <packing>
+                <property name="X">50</property>
+                <property name="Y">254</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryChassis">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">143</property>
+                <property name="Y">173</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label10">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Numero Chassis:</property>
+              </widget>
+              <packing>
+                <property name="X">24</property>
+                <property name="Y">177</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryTypeMoteur">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">125</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label11">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Type moteur:</property>
+              </widget>
+              <packing>
+                <property name="X">471</property>
+                <property name="Y">129</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.ComboBoxEntry" id="comboboxentryCouleur">
+                <property name="MemberName" />
+                <property name="IsTextCombo">True</property>
+                <property name="Items" translatable="yes" />
+              </widget>
+              <packing>
+                <property name="X">116</property>
+                <property name="Y">250</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label13">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Puissance fiscale:</property>
+              </widget>
+              <packing>
+                <property name="X">444</property>
+                <property name="Y">166</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryPFiscale">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">163</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryPCV">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">246</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Entry" id="entryPKw">
+                <property name="MemberName" />
+                <property name="CanFocus">True</property>
+                <property name="IsEditable">True</property>
+                <property name="InvisibleChar">•</property>
+              </widget>
+              <packing>
+                <property name="X">569</property>
+                <property name="Y">205</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label15">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Puissance (CV):</property>
+              </widget>
+              <packing>
+                <property name="X">458</property>
+                <property name="Y">250</property>
+              </packing>
+            </child>
+            <child>
+              <widget class="Gtk.Label" id="label14">
+                <property name="MemberName" />
+                <property name="LabelProp" translatable="yes">Puissance (Kw):</property>
+              </widget>
+              <packing>
+                <property name="X">459</property>
+                <property name="Y">207</property>
+              </packing>
+            </child>
+          </widget>
+          <packing>
+            <property name="Position">0</property>
+            <property name="AutoSize">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+  <widget class="Gtk.Dialog" id="FicheEntretien" design-size="400 300">
+    <property name="MemberName" />
+    <property name="WindowPosition">CenterOnParent</property>
+    <property name="Buttons">2</property>
+    <property name="HelpButton">False</property>
+    <child internal-child="VBox">
+      <widget class="Gtk.VBox" id="dialog1_VBox">
+        <property name="MemberName" />
+        <property name="BorderWidth">2</property>
+        <child>
+          <placeholder />
+        </child>
+      </widget>
+    </child>
+    <child internal-child="ActionArea">
+      <widget class="Gtk.HButtonBox" id="dialog1_ActionArea">
+        <property name="MemberName" />
+        <property name="Spacing">10</property>
+        <property name="BorderWidth">5</property>
+        <property name="Size">2</property>
+        <property name="LayoutStyle">End</property>
+        <child>
+          <widget class="Gtk.Button" id="buttonCancel">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-cancel</property>
+            <property name="ResponseId">-6</property>
+            <property name="label">gtk-cancel</property>
+          </widget>
+          <packing>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+        <child>
+          <widget class="Gtk.Button" id="buttonOk">
+            <property name="MemberName" />
+            <property name="CanDefault">True</property>
+            <property name="CanFocus">True</property>
+            <property name="UseStock">True</property>
+            <property name="Type">StockItem</property>
+            <property name="StockId">gtk-ok</property>
+            <property name="ResponseId">-5</property>
+            <signal name="Clicked" handler="OnButtonOkClicked" />
+            <property name="label">gtk-ok</property>
+          </widget>
+          <packing>
+            <property name="Position">1</property>
+            <property name="Expand">False</property>
+            <property name="Fill">False</property>
+          </packing>
+        </child>
+      </widget>
+    </child>
+  </widget>
+</stetic-interface>

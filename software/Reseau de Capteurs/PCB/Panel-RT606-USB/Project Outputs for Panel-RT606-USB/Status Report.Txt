@@ -1,0 +1,15 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Panel-RT606-USB.PrjPCB]
+   Generated File[Panel.GTL]
+   Generated File[Panel.GD1]
+   Generated File[Panel.GG1]
+   Generated File[Panel.RUL]
+   Generated File[Panel.EXTREP]
+   Generated File[Panel.REP]
+
+
+Files Generated   : 6
+Documents Printed : 0
+
+Finished Output Generation At 10:41:41 On 18/11/2011

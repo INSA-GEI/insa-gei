@@ -1,0 +1,28 @@
+Partlist exported from /scratch/Travail/Eagle/projects/RT606-RS/RT606-RS.sch at 30/09/10 12:48
+
+Part Value   Device          Package      Description                         
+C1   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C2   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C3   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C4   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C5   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C6   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C7   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C8   100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C9   2.2 µF  CPOL-EUE2-5     E2-5         POLARIZED CAPACITOR, European symbol
+C10  100nF   C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+D1   1N4446  1N4446          DO35-10      DIODE                               
+IC1  7805T   7805T           TO220H       Positive VOLTAGE REGULATOR          
+IC2  MAX232  MAX232          DIL16        RS232 TRANSEIVER                    
+IC3  74AS04N 74AS04N         DIL14        Hex INVERTER                        
+JP1          PINHD-1X2       1X02         PIN HEADER                          
+LED1         LED5MM          LED5MM       LED                                 
+LED2         LED5MM          LED5MM       LED                                 
+R1   4.7K    R-EU_0207/10    0207/10      RESISTOR, European symbol           
+R2   4.7K    R-EU_0207/10    0207/10      RESISTOR, European symbol           
+R3   470     R-EU_0207/10    0207/10      RESISTOR, European symbol           
+R4   470     R-EU_0207/10    0207/10      RESISTOR, European symbol           
+S2           DIP02YL         DIP02YL      DIL/CODE SWITCH                     
+S3           DIP04YL         DIP04YL      DIL/CODE SWITCH                     
+U1           RT606           RT606                                            
+X1           F09HP           F09HP        SUB-D                               

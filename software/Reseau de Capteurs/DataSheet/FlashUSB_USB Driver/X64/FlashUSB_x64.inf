@@ -1,0 +1,75 @@
+;----------------------------------------------------------
+;	Inf File for Flash Loader utility
+;
+;	Created on : 28 october 2003
+;
+;	copyright(C) Danish Wireless Design A/S, Denmark
+;
+;----------------------------------------------------------
+
+[Version]
+Signature="$Windows NT$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%IFWD%
+DriverVer= 01/13/2010,1.0.0.7
+CatalogFile=flashusb_x64.cat
+
+[SourceDisksNames]
+1=%FlashUSB.InstallName%,,,
+
+[DestinationDirs]
+FlashUSB.sys.Copy = 12
+
+
+[SourceDisksFiles]
+FlashUsb_x64.sys = 1
+
+
+[Manufacturer]
+%IFWD%=IFWD_FLASH,ntamd64
+
+
+;****************************************************************************
+; Exclude from select the USB device -- it should be auto-detected!
+;****************************************************************************
+
+[ControlFlags]
+ExcludeFromSelect     = USB\Vid_058b&Pid_0015
+ExcludeFromSelect     = USB\Vid_058b&Pid_0041
+
+
+[IFWD_FLASH.ntamd64]
+%FlashUSB.DevName%=FlashUSB.amd64, USB\Vid_058b&Pid_0015
+%FlashUSB.DevName%=FlashUSB.amd64, USB\Vid_058b&Pid_0041
+
+
+[FlashUSB.amd64]
+CopyFiles=FlashUSB.sys.Copy
+
+
+[FlashUSB.amd64.Services]
+Addservice = FlashUSB, 0x00000002, FlashUSB.AddService
+
+[FlashUSB.AddService]
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\FlashUSB_x64.sys
+AddReg=FlashUSB.AddReg
+
+[FlashUSB.AddReg]
+HKR,Parameters,MaximumTransferSize,0x10001,32768
+HKR,Parameters,DebugLevel,0x10001,0
+
+
+[FlashUSB.sys.copy]
+FlashUSB_x64.sys
+
+;---------------------------------------------------------------;
+
+[Strings]
+IFWD="Infineon Technologies"
+FlashUSB.DevName="USB Flash Loader utility"
+FlashUSB.InstallName="USB Flash Loader utility driver Installation Disk"
+

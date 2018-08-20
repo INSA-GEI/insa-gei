@@ -1,0 +1,37 @@
+10
+
+dir
+4
+svn+ssh://srv-ens1/home_pers/dimercur/svn/MinOS/trunk
+svn+ssh://srv-ens1/home_pers/dimercur/svn/MinOS
+
+
+
+2010-07-26T07:31:39.911756Z
+4
+dimercur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8ff4f2f6-ca3c-4e06-a624-5af5ae2d5588
+
+os
+dir
+
+system
+dir
+
+lib_cm3
+dir
+

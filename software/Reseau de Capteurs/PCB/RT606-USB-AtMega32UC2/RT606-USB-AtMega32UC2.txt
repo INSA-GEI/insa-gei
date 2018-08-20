@@ -1,0 +1,14 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|Field=Value~String~Value~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~RT606-USB-AtMega32UC2.PrjPCB|ReportField=ProjectFullPath~D:\Travail\Altium\RT606-USB-AtMega32UC2\RT606-USB-AtMega32UC2.PrjPCB|ReportField=Title~Bill of Materials For Project [RT606-USB-AtMega32UC2.PrjPCB] (No PCB Document Selected)|ReportField=TotalQuantity~29|ReportField=ReportTime~16:39:04|ReportField=ReportDate~28/10/2011|ReportField=ReportDateTime~28/10/2011 16:39:04|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~|ReportField=CurrentDate~28/10/2011|ReportField=CurrentTime~16:37:20|ReportField=Date~|ReportField=DocumentFullPathAndName~D:\Travail\Altium\RT606-USB-AtMega32UC2\Sheet.SchDoc|ReportField=DocumentName~Sheet.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~28/10/2011|ReportField=Organization~|ReportField=ProjectName~RT606-USB-AtMega32UC2.PrjPCB|ReportField=Revision~|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~|ReportField=DataSourceFileName~RT606-USB-AtMega32UC2.PrjPCB|ReportField=DataSourceFullPath~D:\Travail\Altium\RT606-USB-AtMega32UC2\RT606-USB-AtMega32UC2.PrjPCB
+AVR-ISP-MK2|Connecteur AVR pour ISP avec debugger MK2|J1|HDR2X5|AVR-ISP-MK2|1|
+Header 2|Header, 2-Pin|P1, P2, P3|HDR1X2|Header 2|3|
+Header 3|Header, 3-Pin|P4|HDR1X3|Header 3|1|
+Quartz|Quartz standard|XTAL1|HC49/4H_SMX|Quartz|1|
+RT606||U2|RT606|RT606|1|
+Trou 3mm||H1, H2, H3, H4|Trou 3.1mm|Trou 3mm|4|
+USB_1||J2|USB2.5-2H4E|USB_1|1|
+ATmega32U2-AU|8-bit AVR Microcontroller, 2.7-5.5V, 32KB Flash, 1KB EEPROM, 1KB SRAM, 32-pin TQFP, Industrial Grade (-40°C to 85°C)|U1|32A_N|ATmega32U2-AU|1|
+Res_EU|Resistor|R1, R2, R3, R4|RESC3216N|Res_EU|4|1K, 100R
+Cap Pol|Polarized Capacitor (Surface Mount)|C3|TC3216-1206|Cap Pol|1|1µF
+Cap Pol|Polarized Capacitor (Surface Mount)|C2|TC3528-1411|Cap Pol|1|2.2µF
+Inductor|Inductor|L1|INDC3225N|Inductor|1|10mH
+Cap|Capacitor|C1, C4, C5, C6, C7, C8, C9, C10, C11|CAPC3216N|Cap|9|18pF, 47pF, 100nF

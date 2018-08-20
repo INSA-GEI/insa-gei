@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controleur Robot", "Controleur Robot\Controleur Robot.csproj", "{B14295E4-A4C7-4F13-A6EB-5FC75C309616}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "install", "install\install.vdproj", "{3AAD7D3B-0280-4006-8401-93C21005E579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B14295E4-A4C7-4F13-A6EB-5FC75C309616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14295E4-A4C7-4F13-A6EB-5FC75C309616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14295E4-A4C7-4F13-A6EB-5FC75C309616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14295E4-A4C7-4F13-A6EB-5FC75C309616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AAD7D3B-0280-4006-8401-93C21005E579}.Debug|Any CPU.ActiveCfg = Debug
+		{3AAD7D3B-0280-4006-8401-93C21005E579}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

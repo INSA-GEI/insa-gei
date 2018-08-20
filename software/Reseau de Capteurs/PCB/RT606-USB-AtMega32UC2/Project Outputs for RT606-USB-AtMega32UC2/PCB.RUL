@@ -1,0 +1,6 @@
+DRC Rules Export File for PCB: D:\Travail\Altium\RT606-USB-AtMega32UC2\PCB.PcbDoc
+RuleKind=Clearance|RuleName=Polygon Clearance|Scope=Board|Minimum=16.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=12.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.95
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

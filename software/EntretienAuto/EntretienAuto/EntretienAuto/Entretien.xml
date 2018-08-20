@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<EntretienDB>
+  <AttributList>
+    <AttributElement nom="typevehicule">VL</AttributElement>
+    <AttributElement nom="typevehicule">PL</AttributElement> 
+    <AttributElement nom="typevehicule">Moto</AttributElement>
+    <AttributElement nom="typevehicule">Utilitaire</AttributElement> 
+    <AttributElement nom="typevehicule">Velo</AttributElement>
+    <AttributElement nom="typevehicule">MotoCulture</AttributElement> 
+  </AttributList>
+  <Vehicule marque="Opel" modele="Meriva">AV-147-QT</Vehicule>
+  <EntretienList>
+    <Entretien kms="210000" mecanicien="Moi" type="periodique" titre="Vidange" diagnostique="" piecesdetachees="" prix="3€">10/02/2010</Entretien>
+  	<Entretien kms="211000" mecanicien="Moi" type="panne" titre="Rotule de direction" diagnostique="" piecesdetachees="" prix="120€">10/03/2010</Entretien>
+	<Entretien kms="220000" mecanicien="Moi" type="periodique" titre="Vidange" diagnostique="" piecesdetachees="" prix="3€">10/05/2010</Entretien>
+</EntretienList>
+</EntretienDB>

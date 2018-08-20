@@ -1,0 +1,16 @@
+Partlist exported from /scratch/Travail/Eagle/projects/Xbee USB Boitier Farnell/Xbee USB/xbee-usb.sch at 30/09/10 12:49
+
+Part Value Device          Package      Description                         
+C1   100nF C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C2   100nF C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C3   2.2µF CPOL-EUE2.5-5   E2,5-5       POLARIZED CAPACITOR, European symbol
+C4   100nF C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+C5   10nF  C-EU050-030X075 C050-030X075 CAPACITOR, European symbol          
+JP1        PINHD-1X2       1X02         PIN HEADER                          
+JP2        PINHD-1X2       1X02         PIN HEADER                          
+L1         L-USL1812       L1812        INDUCTOR, American symbol           
+LED3       LED3MM          LED3MM       LED                                 
+R2   470   R-EU_0207/12    0207/12      RESISTOR, European symbol           
+U1         FT232RL         SSOP28DB     USB UART                            
+U2   XBEE  XBEE            XBEE                                             
+X1         PN61729-SN      PN6179-N     BERG USB connector                  

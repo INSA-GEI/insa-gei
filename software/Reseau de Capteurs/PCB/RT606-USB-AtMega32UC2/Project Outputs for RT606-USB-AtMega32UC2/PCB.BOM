@@ -1,0 +1,19 @@
+Bill of Material for 
+On 28/10/2011 at 16:35:35
+
+ Comment             Pattern     Quantity  Components
+------------------------------------------------------------------------------
+ ATmega32U2-AU       32A_N            1    U1                           8-bit AVR Microcontroller, 2.7-5.5V, 32KB Flash, 1KB EEPROM, 1KB SRAM, 32-pin TQFP, Industrial Grade (-40°C to 85°C) 
+ AVR-ISP-MK2         HDR2X5           1    J1                           Connecteur AVR pour ISP avec debugger MK2 
+ Cap Pol             TC3216-1206      1    C3                           Polarized Capacitor (Surface Mount) 
+ Cap Pol             TC3528-1411      1    C2                           Polarized Capacitor (Surface Mount) 
+ Cap                 CAPC3216N        9    C1, C4, C5, C6, C7, C8, C9   Capacitor            
+                                           C10, C11
+ Header 2            HDR1X2           3    P1, P2, P3                   Header, 2-Pin        
+ Header 3            HDR1X3           1    P4                           Header, 3-Pin        
+ Inductor            INDC3225N        1    L1                           Inductor             
+ Quartz              HC49/4H_SMX      1    XTAL1                        Quartz standard      
+ Res_EU              RESC3216N        4    R1, R2, R3, R4               Resistor             
+ RT606               RT606            1    U2                                                
+ Trou 3mm            Trou 3.1mm       4    H1, H2, H3, H4                                    
+ USB_1               USB2.5-2H4E      1    J2                                                

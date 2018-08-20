@@ -1,0 +1,15 @@
+﻿"Symbol";"Value";"Unit";
+"REFERENCE";"CJ44";"";
+"TraceParts.PartVersion";"1.1.6";"";
+"SUPPLIER";"NICOLL";"";
+"ND";"50";"mm";
+"TraceParts.PartStatus";"Published";"";
+"TraceParts.PartNumber";"32-10052006-107838";"";
+"TraceParts.PartLanguage";"fr";"";
+"DESIGN";"Coude femelle-femelle à 45° Ø50 mm";"";
+"TraceParts.InstanceId";"32-10052006-1078383TDZSDSKO1J0N0ELAGDV4LL8C";"";
+"TraceParts.PartTitle";"Coude femelle-femelle à 45°";"";
+"OMNICLASS23";"23.27.51.00";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartStatusId";"";"";
+"TraceParts.ClassPath";"NICOLL:/F_NICOLL/NICOLL.010/NICOLL.010.010/NICOLL.010.010.010/32-10052006-107838";"";

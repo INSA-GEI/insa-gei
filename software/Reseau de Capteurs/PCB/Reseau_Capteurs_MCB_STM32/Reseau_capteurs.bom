@@ -1,0 +1,37 @@
+Partlist exported from D:/Travail/Eagle/Projects/Reseau de capteurs/Reseau_Capteurs_MCB_STM32/Reseau_capteurs.sch at 31/10/2011 14:53:08
+
+Part Value     Device     Package  Description               
+C1   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+C2   100nF     C-EUC1206  C1206    CAPACITOR, European symbol
+C3   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+C4   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+C5   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+C6   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+C7   47pF      C-EUC1206  C1206    CAPACITOR, European symbol
+D1   BAS40-04  BAS40-04   SOT23    Silicon Schottky Diodes   
+D2   BAS40-04  BAS40-04   SOT23    Silicon Schottky Diodes   
+D3   BAS40-04  BAS40-04   SOT23    Silicon Schottky Diodes   
+JP1            PINHD-1X3  1X03     PIN HEADER                
+JP2            PINHD-1X3  1X03     PIN HEADER                
+JP3            PINHD-1X3  1X03     PIN HEADER                
+JP4            PINHD-1X3  1X03     PIN HEADER                
+JP5            PINHD-1X3  1X03     PIN HEADER                
+JP6            PINHD-1X3  1X03     PIN HEADER                
+JP7            PINHD-1X3  1X03     PIN HEADER                
+JP8            PINHD-1X3  1X03     PIN HEADER                
+JP9            PINHD-1X3  1X03     PIN HEADER                
+JP10           PINHD-1X3  1X03     PIN HEADER                
+JP11           PINHD-1X6  1X06     PIN HEADER                
+LED1           LED3MM     LED3MM   LED                       
+R1   33K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R2   33K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R3   33K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R4   68K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R5   68K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R6   68K       R-EU_R1206 R1206    RESISTOR, European symbol 
+R7   330R      R-EU_R1206 R1206    RESISTOR, European symbol 
+U1   MCB_STM32 MCB_STM32  MCBSTM32                           
+U2             RT606      RT606                              
+U3             74LVX4245  SO24W                              
+U4             74LVX4245  SO24W                              
+U5   XBEE      XBEE       XBEE                               
