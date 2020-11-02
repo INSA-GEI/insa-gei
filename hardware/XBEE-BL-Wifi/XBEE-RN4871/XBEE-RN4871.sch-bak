@@ -1,0 +1,329 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Module BLE SPBTLE sur empreinte XBEE"
+Date "2020-10-30"
+Rev "1.0"
+Comp "INSA GEI"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 8500 575  0    60   ~ 0
+Xbee clone PCB Layout
+Wire Notes Line
+	8475 650  9675 650 
+Wire Notes Line
+	9675 650  9675 475 
+$Comp
+L power:GND #PWR02
+U 1 1 56D746ED
+P 9150 2350
+F 0 "#PWR02" H 9150 2100 50  0001 C CNN
+F 1 "GND" H 9150 2200 50  0000 C CNN
+F 2 "" H 9150 2350 50  0000 C CNN
+F 3 "" H 9150 2350 50  0000 C CNN
+	1    9150 2350
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	11200 2850 8450 2850
+Wire Notes Line
+	8450 2850 8450 500 
+$Comp
+L Connector_Generic:Conn_01x10 J1
+U 1 1 5F9C2343
+P 9600 1700
+F 0 "J1" H 9550 2250 50  0000 L CNN
+F 1 "Conn_01x10" H 9680 1601 50  0001 L CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x10_P2.00mm_Vertical" H 9600 1700 50  0001 C CNN
+F 3 "~" H 9600 1700 50  0001 C CNN
+	1    9600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x10 J2
+U 1 1 5F9C2B38
+P 10150 1800
+F 0 "J2" H 10150 1150 50  0000 C CNN
+F 1 "Conn_01x10" H 10068 1166 50  0001 C CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x10_P2.00mm_Vertical" H 10150 1800 50  0001 C CNN
+F 3 "~" H 10150 1800 50  0001 C CNN
+	1    10150 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F9D2540
+P 9150 1100
+F 0 "#PWR?" H 9150 950 50  0001 C CNN
+F 1 "+3V3" H 9165 1273 50  0000 C CNN
+F 2 "" H 9150 1100 50  0001 C CNN
+F 3 "" H 9150 1100 50  0001 C CNN
+	1    9150 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 1300 9150 1300
+Wire Wire Line
+	9150 1300 9150 1100
+Wire Wire Line
+	9400 2200 9150 2200
+Wire Wire Line
+	9150 2200 9150 2350
+Wire Wire Line
+	9400 1400 8700 1400
+Wire Wire Line
+	9400 1500 8700 1500
+Wire Wire Line
+	9400 1600 8700 1600
+Wire Wire Line
+	9400 1700 8700 1700
+Wire Wire Line
+	9400 1800 8700 1800
+Wire Wire Line
+	9400 1900 8700 1900
+Wire Wire Line
+	9400 2000 8700 2000
+Wire Wire Line
+	9400 2100 8700 2100
+Wire Wire Line
+	10350 2200 11050 2200
+Wire Wire Line
+	10350 2100 11050 2100
+Wire Wire Line
+	10350 2000 11050 2000
+Wire Wire Line
+	10350 1900 11050 1900
+Wire Wire Line
+	10350 1800 11050 1800
+Wire Wire Line
+	10350 1700 11050 1700
+Wire Wire Line
+	10350 1600 11050 1600
+Wire Wire Line
+	10350 1500 11050 1500
+Wire Wire Line
+	10350 1400 11050 1400
+Wire Wire Line
+	10350 1300 11050 1300
+Text Label 8700 1400 0    50   ~ 0
+DOUT
+Text Label 8700 1500 0    50   ~ 0
+DIN
+Text Label 8700 1600 0    50   ~ 0
+DO8
+Text Label 8700 1700 0    50   ~ 0
+RESET
+Text Label 8700 1800 0    50   ~ 0
+RSSI
+Text Label 8700 1900 0    50   ~ 0
+PWM1
+Text Label 8700 2000 0    50   ~ 0
+NC
+NoConn ~ 8700 2000
+Text Label 8700 2100 0    50   ~ 0
+~DTR
+Text Label 11050 2200 2    50   ~ 0
+AD4
+Text Label 11050 2100 2    50   ~ 0
+~CTS
+Text Label 11050 2000 2    50   ~ 0
+ON
+Text Label 11050 1900 2    50   ~ 0
+VREF
+Text Label 11050 1800 2    50   ~ 0
+Associate
+Text Label 11050 1700 2    50   ~ 0
+~RTS
+Text Label 11050 1600 2    50   ~ 0
+AD3
+Text Label 11050 1500 2    50   ~ 0
+AD2
+Text Label 11050 1400 2    50   ~ 0
+AD1
+Text Label 11050 1300 2    50   ~ 0
+AD0
+$Comp
+L Insa:RN4871 U1
+U 1 1 5F9C5B87
+P 5050 4450
+F 0 "U1" H 4975 5715 50  0000 C CNN
+F 1 "RN4871" H 4975 5624 50  0000 C CNN
+F 2 "Insa:RN4871-I-RM128" H 4600 5600 50  0001 C CNN
+F 3 "" H 4600 5600 50  0001 C CNN
+	1    5050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5F9C7229
+P 4300 3300
+F 0 "#PWR?" H 4300 3150 50  0001 C CNN
+F 1 "+3V3" H 4315 3473 50  0000 C CNN
+F 2 "" H 4300 3300 50  0001 C CNN
+F 3 "" H 4300 3300 50  0001 C CNN
+	1    4300 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9C859E
+P 4300 4500
+F 0 "#PWR?" H 4300 4250 50  0001 C CNN
+F 1 "GND" H 4300 4350 50  0000 C CNN
+F 2 "" H 4300 4500 50  0000 C CNN
+F 3 "" H 4300 4500 50  0000 C CNN
+	1    4300 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 3450 4300 3450
+Wire Wire Line
+	4300 3450 4300 3300
+Wire Wire Line
+	4450 4300 4300 4300
+Wire Wire Line
+	4300 4300 4300 4400
+Wire Wire Line
+	4450 4400 4300 4400
+Connection ~ 4300 4400
+Wire Wire Line
+	4300 4400 4300 4500
+Wire Wire Line
+	4450 3750 3250 3750
+Wire Wire Line
+	4450 3850 3250 3850
+Text Label 3250 3850 0    50   ~ 0
+DOUT
+Text Label 3250 3750 0    50   ~ 0
+DIN
+Text Label 3250 4050 0    50   ~ 0
+RESET
+NoConn ~ 5500 3500
+NoConn ~ 5500 3600
+NoConn ~ 5500 3700
+NoConn ~ 5500 3800
+NoConn ~ 5500 3900
+NoConn ~ 5500 4000
+NoConn ~ 4450 3600
+NoConn ~ 8700 2100
+NoConn ~ 8700 1900
+NoConn ~ 8700 1800
+NoConn ~ 8700 1600
+NoConn ~ 11050 1300
+NoConn ~ 11050 1400
+NoConn ~ 11050 1500
+NoConn ~ 11050 1600
+NoConn ~ 11050 1800
+NoConn ~ 11050 1900
+NoConn ~ 11050 2000
+NoConn ~ 11050 2100
+NoConn ~ 11050 2200
+$Comp
+L Device:R R1
+U 1 1 5F9FDD93
+P 5850 3950
+F 0 "R1" H 5920 3996 50  0000 L CNN
+F 1 "1K" H 5920 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5780 3950 50  0001 C CNN
+F 3 "~" H 5850 3950 50  0001 C CNN
+	1    5850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5F9FE6E8
+P 2900 3700
+F 0 "R2" H 2970 3746 50  0000 L CNN
+F 1 "4.7K" H 2970 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 2830 3700 50  0001 C CNN
+F 3 "~" H 2900 3700 50  0001 C CNN
+	1    2900 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5F9FEC11
+P 2900 4350
+F 0 "C1" H 3015 4396 50  0000 L CNN
+F 1 "1µF" H 3015 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 2938 4200 50  0001 C CNN
+F 3 "~" H 2900 4350 50  0001 C CNN
+	1    2900 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F9FF135
+P 5850 3500
+F 0 "D1" H 5843 3717 50  0000 C CNN
+F 1 "LED" H 5843 3626 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 3500 50  0001 C CNN
+F 3 "~" H 5850 3500 50  0001 C CNN
+	1    5850 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3450 2900 3450
+Wire Wire Line
+	2900 3450 2900 3550
+Connection ~ 4300 3450
+Wire Wire Line
+	2900 3850 2900 4050
+Wire Wire Line
+	2900 4500 4300 4500
+Connection ~ 4300 4500
+Wire Wire Line
+	2900 4050 4450 4050
+Connection ~ 2900 4050
+Wire Wire Line
+	2900 4050 2900 4200
+Wire Wire Line
+	5500 4300 6150 4300
+NoConn ~ 5500 4200
+Text Label 6500 4300 2    50   ~ 0
+~RTS
+$Comp
+L Device:R R3
+U 1 1 5FA10943
+P 6150 4150
+F 0 "R3" H 6220 4196 50  0000 L CNN
+F 1 "1K" H 6220 4105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6080 4150 50  0001 C CNN
+F 3 "~" H 6150 4150 50  0001 C CNN
+	1    6150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5FA120D3
+P 6150 3250
+F 0 "#PWR?" H 6150 3100 50  0001 C CNN
+F 1 "+3V3" H 6165 3423 50  0000 C CNN
+F 2 "" H 6150 3250 50  0001 C CNN
+F 3 "" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3250 6150 3350
+Connection ~ 6150 4300
+Wire Wire Line
+	6150 4300 6500 4300
+Wire Wire Line
+	5850 4100 5500 4100
+Wire Wire Line
+	5850 3650 5850 3800
+Wire Wire Line
+	5850 3350 6150 3350
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3350 6150 4000
+Text Notes 5650 4550 0    50   ~ 0
+P2_0 = Configuration\n0v = test mode\n3v3 = normal mode
+$EndSCHEMATC
