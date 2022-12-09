@@ -1,0 +1,362 @@
+Info: Traitement du symbole "R2:Resistor_SMD:R_1206_3216Metric".
+Info: Traitement du symbole "SW1:Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS".
+Info: Traitement du symbole "D3:LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm".
+Info: Traitement du symbole "C5:Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder".
+Info: Traitement du symbole "R1:Resistor_SMD:R_1206_3216Metric".
+Info: Traitement du symbole "U3A1:INSA:XBRR-24Z8RM-J".
+Info: Traitement du symbole "C6:Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder".
+Info: Traitement du symbole "SW2:Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled".
+Info: Traitement du symbole "C4:Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder".
+Info: Traitement du symbole "D2:LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm".
+Info: Traitement du symbole "FB1:Resistor_SMD:R_1210_3225Metric".
+Info: Traitement du symbole "R4:Resistor_SMD:R_1206_3216Metric".
+Info: Traitement du symbole "U2:Package_TO_SOT_SMD:SOT-223-3_TabPin2".
+Info: Traitement du symbole "C3:Capacitor_SMD:C_1206_3216Metric".
+Info: Traitement du symbole "U1:Package_SO:SSOP-20_3.9x8.7mm_P0.635mm".
+Info: Traitement du symbole "D1:LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm".
+Info: Traitement du symbole "U4:Package_TO_SOT_SMD:SOT-23-5".
+Info: Traitement du symbole "R3:Resistor_SMD:R_1206_3216Metric".
+Info: Traitement du symbole "J1:Connector_Coaxial:SMA_Amphenol_901-143_Horizontal".
+Info: Traitement du symbole "U3B1:INSA:XBEE-3-TH".
+Info: Traitement du symbole "P1:INSA:USB_C_Receptacle_GCT_USB4125".
+Info: Traitement du symbole "C2:Capacitor_SMD:C_1206_3216Metric".
+Info: Traitement du symbole "C7:Capacitor_SMD:C_1206_3216Metric".
+Info: Traitement du symbole "C1:Capacitor_SMD:C_1206_3216Metric".
+Connecter U3A1 pin 15 à unconnected-(U3A1-Pad15).
+Ajout net unconnected-(U3A1-Pad17).
+Ajout net unconnected-(U3A1-Pad11).
+Connecter U3A1 pin 16 à unconnected-(U3A1-Pad16).
+Ajout net unconnected-(U3A1-Pad16).
+Connecter U3A1 pin 11 à unconnected-(U3A1-Pad11).
+Ajout net unconnected-(U3A1-Pad15).
+Connecter U3A1 pin 14 à unconnected-(U3A1-Pad14).
+Connecter U3A1 pin 12 à GND.
+Ajout net unconnected-(U3A1-Pad13).
+Ajout net unconnected-(U3A1-Pad19).
+Connecter U3A1 pin 13 à unconnected-(U3A1-Pad13).
+Ajout net unconnected-(U3A1-Pad14).
+Ajout net unconnected-(U3A1-Pad23).
+Ajout net unconnected-(U3A1-Pad30).
+Connecter U3A1 pin 29 à unconnected-(U3A1-Pad29).
+Ajout net unconnected-(U3A1-Pad29).
+Connecter U3A1 pin 28 à unconnected-(U3A1-Pad28).
+Ajout net unconnected-(U3A1-Pad28).
+Connecter U3A1 pin 27 à /USART_RTS.
+Connecter U3A1 pin 26 à /ASSOCIATE.
+Connecter U3A1 pin 25 à /~{SLEEP}.
+Connecter U3A1 pin 24 à /USART_CTS.
+Connecter U3A1 pin 23 à unconnected-(U3A1-Pad23).
+Connecter U3A1 pin 17 à unconnected-(U3A1-Pad17).
+Connecter U3A1 pin 22 à unconnected-(U3A1-Pad22).
+Ajout net unconnected-(U3A1-Pad22).
+Connecter U3A1 pin 21 à GND.
+Connecter U3A1 pin 20 à unconnected-(U3A1-Pad20).
+Ajout net unconnected-(U3A1-Pad20).
+Connecter U3A1 pin 19 à unconnected-(U3A1-Pad19).
+Connecter U3A1 pin 7 à unconnected-(U3A1-Pad7).
+Connecter U3A1 pin 18 à unconnected-(U3A1-Pad18).
+Ajout net unconnected-(U3A1-Pad18).
+Connecter U1 pin 16 à GND.
+Connecter U2 pin 1 à GND.
+Mise à jour des propriétés de U2.
+Mise à jour U2 association de symbole de  à /9c7e4a69-e4a6-4ab2-9e11-15edc946cbde.
+Modifie valeur U2 de SOT-223-3_TabPin2 en NCP1117-3.3_SOT223.
+Change la référence schématique de REF** en U2.
+Ajouté U2 (empreinte 'Package_TO_SOT_SMD:SOT-223-3_TabPin2').
+Connecter U1 pin 20 à /USART_TXD.
+Connecter U1 pin 19 à unconnected-(U1-Pad19).
+Connecter U1 pin 18 à unconnected-(U1-Pad18).
+Connecter U1 pin 17 à unconnected-(U1-Pad17).
+Connecter U2 pin 2 à +3.3V.
+Connecter U1 pin 15 à +5V.
+Connecter U1 pin 14 à unconnected-(U1-Pad14).
+Connecter U1 pin 13 à Net-(C1-Pad1).
+Connecter U1 pin 12 à /USB_DM.
+Connecter U1 pin 11 à /USB_DP.
+Connecter U1 pin 10 à unconnected-(U1-Pad10).
+Connecter U1 pin 9 à /USART_CTS.
+Connecter U1 pin 8 à unconnected-(U1-Pad8).
+Connecter U1 pin 1 à /USART_DTR.
+Connecter U3A1 pin 3 à /USART_RXD.
+Connecter U3A1 pin 9 à /SLEEP_RQ.
+Ajout net /SLEEP_RQ.
+Connecter U3A1 pin 8 à unconnected-(U3A1-Pad8).
+Ajout net unconnected-(U3A1-Pad8).
+Connecter U1 pin 7 à unconnected-(U1-Pad7).
+Ajout net unconnected-(U3A1-Pad7).
+Connecter U3A1 pin 6 à /~{RESET}.
+Connecter U3A1 pin 5 à unconnected-(U3A1-Pad5).
+Ajout net unconnected-(U3A1-Pad5).
+Connecter U3A1 pin 4 à /USART_TXD.
+Connecter U3A1 pin 10 à GND.
+Connecter U3A1 pin 2 à +3.3V.
+Connecter U3A1 pin 1 à GND.
+Mise à jour des propriétés de U3A1.
+Mise à jour U3A1 association de symbole de  à /560abb9b-3723-49fc-8edd-c453f7f7c443.
+Modifie valeur U3A1 de XBRR-24Z8RM-J en XBee_RR_MMT.
+Change la référence schématique de REF** en U3A1.
+Ajouté U3A1 (empreinte 'INSA:XBRR-24Z8RM-J').
+Connecter U2 pin 3 à VCOM.
+Connecter U2 pin 2 à +3.3V.
+Suppression net inutilisé 'unconnected-(U4-Pad14)'.
+Suppression net inutilisé 'unconnected-(U4-Pad23)'.
+Suppression net inutilisé 'unconnected-(U4-Pad22)'.
+Suppression net inutilisé 'unconnected-(U4-Pad21)'.
+Suppression net inutilisé 'unconnected-(U4-Pad20)'.
+Suppression net inutilisé 'unconnected-(U4-Pad2)'.
+Suppression net inutilisé 'unconnected-(U4-Pad19)'.
+Suppression net inutilisé 'unconnected-(U4-Pad18)'.
+Suppression net inutilisé 'unconnected-(U4-Pad17)'.
+Suppression net inutilisé 'unconnected-(U4-Pad16)'.
+Suppression net inutilisé 'unconnected-(U4-Pad15)'.
+Suppression net inutilisé 'unconnected-(U4-Pad24)'.
+Suppression net inutilisé 'unconnected-(U4-Pad13)'.
+Suppression net inutilisé 'unconnected-(U4-Pad12)'.
+Suppression net inutilisé 'unconnected-(U4-Pad11)'.
+Suppression net inutilisé 'unconnected-(U4-Pad10)'.
+Suppression net inutilisé 'unconnected-(U4-Pad1)'.
+Suppression net inutilisé 'unconnected-(U1-Pad1)'.
+Suppression net inutilisé 'VCC'.
+Suppression net inutilisé '/USART_DCR'.
+Connecter U4 pin 5 à +3.3V.
+Connecter U4 pin 4 à /SLEEP_RQ.
+Suppression net inutilisé 'unconnected-(U4-Pad33)'.
+Suppression net inutilisé 'unconnected-(U4-Pad9)'.
+Suppression net inutilisé 'unconnected-(U4-Pad8)'.
+Suppression net inutilisé 'unconnected-(U4-Pad7)'.
+Suppression net inutilisé 'unconnected-(U4-Pad6)'.
+Suppression net inutilisé 'unconnected-(U4-Pad5)'.
+Suppression net inutilisé 'unconnected-(U4-Pad4)'.
+Suppression net inutilisé 'unconnected-(U4-Pad37)'.
+Suppression net inutilisé 'unconnected-(U4-Pad36)'.
+Suppression net inutilisé 'unconnected-(U4-Pad35)'.
+Suppression net inutilisé 'unconnected-(U4-Pad34)'.
+Connecter U4 pin 3 à GND.
+Suppression net inutilisé 'unconnected-(U4-Pad32)'.
+Suppression net inutilisé 'unconnected-(U4-Pad31)'.
+Suppression net inutilisé 'unconnected-(U4-Pad30)'.
+Suppression net inutilisé 'unconnected-(U4-Pad3)'.
+Suppression net inutilisé 'unconnected-(U4-Pad29)'.
+Suppression net inutilisé 'unconnected-(U4-Pad28)'.
+Suppression net inutilisé 'unconnected-(U4-Pad27)'.
+Suppression net inutilisé 'unconnected-(U4-Pad26)'.
+Suppression net inutilisé 'unconnected-(U4-Pad25)'.
+Connecter U3B1 pin 2 à /USART_RXD.
+Connecter U3B1 pin 10 à GND.
+Connecter U3B1 pin 9 à /SLEEP_RQ.
+Connecter U3B1 pin 7 à unconnected-(U3B1-Pad7).
+Ajout net unconnected-(U3B1-Pad7).
+Connecter U3B1 pin 6 à unconnected-(U3B1-Pad6).
+Ajout net unconnected-(U3B1-Pad6).
+Connecter U3B1 pin 5 à /~{RESET}.
+Connecter U3B1 pin 4 à unconnected-(U3B1-Pad4).
+Ajout net unconnected-(U3B1-Pad4).
+Connecter U3B1 pin 3 à /USART_TXD.
+Ajout net unconnected-(U3B1-Pad11).
+Connecter U3B1 pin 1 à +3.3V.
+Mise à jour des propriétés de U3B1.
+Mise à jour U3B1 association de symbole de  à /8b603c55-b870-4eab-accd-3aa2a640addf.
+Change la référence schématique de REF** en U3B1.
+Ajouté U3B1 (empreinte 'INSA:XBEE-3-TH').
+Connecter U3A1 pin 34 à GND.
+Connecter U3A1 pin 33 à /RF.
+Connecter U3A1 pin 32 à GND.
+Connecter U3A1 pin 31 à unconnected-(U3A1-Pad31).
+Ajout net unconnected-(U3A1-Pad31).
+Ajout net unconnected-(U3B1-Pad19).
+Connecter U4 pin 2 à /USART_DTR.
+Connecter U4 pin 1 à Net-(SW2-Pad2).
+Mise à jour des propriétés de U4.
+Mise à jour U4 association de symbole de  à /ec67aeb1-e535-4ea0-a8be-cd218c3b7c5e.
+Modifie valeur U4 de SOT-23-5 en 74AHC1G08.
+Change la référence schématique de REF** en U4.
+Ajouté U4 (empreinte 'Package_TO_SOT_SMD:SOT-23-5').
+Connecter U3B1 pin 20 à unconnected-(U3B1-Pad20).
+Ajout net unconnected-(U3B1-Pad20).
+Connecter U3B1 pin 19 à unconnected-(U3B1-Pad19).
+Connecter U3A1 pin 30 à unconnected-(U3A1-Pad30).
+Connecter U3B1 pin 18 à unconnected-(U3B1-Pad18).
+Ajout net unconnected-(U3B1-Pad18).
+Connecter U3B1 pin 17 à unconnected-(U3B1-Pad17).
+Ajout net unconnected-(U3B1-Pad17).
+Connecter U3B1 pin 16 à /USART_RTS.
+Connecter U3B1 pin 15 à /ASSOCIATE.
+Connecter U3B1 pin 13 à /~{SLEEP}.
+Connecter U3B1 pin 12 à /USART_CTS.
+Connecter U3B1 pin 11 à unconnected-(U3B1-Pad11).
+Ajouté D1 (empreinte 'LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm').
+Modifie valeur D2 de LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm en LED.
+Change la référence schématique de REF** en D2.
+Ajouté D2 (empreinte 'LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm').
+Connecter D1 pin 2 à +3.3V.
+Connecter D1 pin 1 à Net-(D1-Pad1).
+Ajout net Net-(D1-Pad1).
+Mise à jour des propriétés de D1.
+Mise à jour D1 association de symbole de  à /cb731f75-215e-405f-95c7-a05ca34509e7.
+Modifie valeur D1 de LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm en LED.
+Change la référence schématique de REF** en D1.
+Mise à jour D2 association de symbole de  à /d216efa2-05a2-49ae-9d26-f51daea2e08f.
+Connecter C7 pin 2 à +3.3V.
+Connecter C7 pin 1 à GND.
+Mise à jour des propriétés de C7.
+Mise à jour C7 association de symbole de  à /4143c9b4-b3e8-4a83-bc78-cc7aff0d8d87.
+Modifie valeur C7 de C_1206_3216Metric en 100nF.
+Change la référence schématique de REF** en C7.
+Ajouté C7 (empreinte 'Capacitor_SMD:C_1206_3216Metric').
+Connecter C6 pin 2 à GND.
+Connecter C6 pin 1 à +3.3V.
+Connecter D3 pin 1 à Net-(D3-Pad1).
+Ajouté J1 (empreinte 'Connector_Coaxial:SMA_Amphenol_901-143_Horizontal').
+Connecter FB1 pin 2 à +5V.
+Connecter FB1 pin 1 à VCOM.
+Ajout net unconnected-(U1-Pad7).
+Mise à jour FB1 association de symbole de  à /6a26efdc-d429-44b6-bd9c-50ac3fe1cb48.
+Modifie valeur FB1 de R_1210_3225Metric en MI1210K600R-10.
+Change la référence schématique de REF** en FB1.
+Ajouté FB1 (empreinte 'Resistor_SMD:R_1210_3225Metric').
+Connecter D3 pin 2 à /ASSOCIATE.
+Ajout net /ASSOCIATE.
+Mise à jour des propriétés de C6.
+Ajout net Net-(D3-Pad1).
+Mise à jour des propriétés de D3.
+Mise à jour D3 association de symbole de  à /81661639-75a1-43d8-9728-62cfb0858969.
+Modifie valeur D3 de LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm en LED.
+Change la référence schématique de REF** en D3.
+Ajouté D3 (empreinte 'LED_THT:LED_D5.0mm_Horizontal_O3.81mm_Z9.0mm').
+Connecter D2 pin 2 à +3.3V.
+Connecter D2 pin 1 à Net-(D2-Pad1).
+Mise à jour des propriétés de D2.
+Modifie valeur C2 de C_1206_3216Metric en 10nF.
+Mise à jour des propriétés de C3.
+Mise à jour C3 association de symbole de  à /626f3b06-c9f0-4c0c-b7ba-5ebefcc28dd7.
+Modifie valeur C3 de C_1206_3216Metric en 100nF.
+Change la référence schématique de REF** en C3.
+Ajouté C3 (empreinte 'Capacitor_SMD:C_1206_3216Metric').
+Connecter C2 pin 2 à GND.
+Connecter C2 pin 1 à VCOM.
+Ajout net VCOM.
+Mise à jour des propriétés de C2.
+Mise à jour C2 association de symbole de  à /272f7e37-ba4a-422c-8fed-33714ae4a55f.
+Connecter C3 pin 1 à +5V.
+Change la référence schématique de REF** en C2.
+Ajouté C2 (empreinte 'Capacitor_SMD:C_1206_3216Metric').
+Connecter C1 pin 2 à GND.
+Connecter C1 pin 1 à Net-(C1-Pad1).
+Mise à jour des propriétés de C1.
+Mise à jour C1 association de symbole de  à /1b876b18-019a-4d07-98d6-d22eead1802e.
+Modifie valeur C1 de C_1206_3216Metric en 100nF.
+Change la référence schématique de REF** en C1.
+Ajouté C1 (empreinte 'Capacitor_SMD:C_1206_3216Metric').
+Change la référence schématique de REF** en C5.
+Mise à jour C6 association de symbole de  à /880b3454-936b-4144-a78f-2439a9b80d58.
+Modifie valeur C6 de CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder en 10µF.
+Change la référence schématique de REF** en C6.
+Ajouté C6 (empreinte 'Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder').
+Connecter C5 pin 2 à GND.
+Connecter C5 pin 1 à VCOM.
+Mise à jour des propriétés de C5.
+Mise à jour C5 association de symbole de  à /63b3a643-fee7-4d6f-8436-d6d8bb8a8990.
+Modifie valeur C5 de CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder en 10µF.
+Mise à jour des propriétés de FB1.
+Ajouté C5 (empreinte 'Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder').
+Connecter C4 pin 2 à GND.
+Connecter C4 pin 1 à +5V.
+Mise à jour des propriétés de C4.
+Mise à jour C4 association de symbole de  à /94ad6c90-6e6f-434e-be27-e9528281130a.
+Modifie valeur C4 de CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder en 2.2µF.
+Change la référence schématique de REF** en C4.
+Ajouté C4 (empreinte 'Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B_Pad1.50x2.35mm_HandSolder').
+Connecter C3 pin 2 à GND.
+Mise à jour R4 association de symbole de  à /f1f3c824-4a13-4ba2-926f-61c995c1b774.
+Connecter SW1 pin 1 à GND.
+Mise à jour des propriétés de SW1.
+Mise à jour SW1 association de symbole de  à /ec831585-4ea0-4716-87d9-f3831b1288b7.
+Modifie valeur SW1 de SW_Tactile_SPST_Angled_PTS645Vx83-2LFS en SW_Push.
+Change la référence schématique de REF** en SW1.
+Ajouté SW1 (empreinte 'Button_Switch_THT:SW_Tactile_SPST_Angled_PTS645Vx83-2LFS').
+Connecter R4 pin 2 à +3.3V.
+Connecter R4 pin 1 à /~{RESET}.
+Ajout net /~{RESET}.
+Mise à jour des propriétés de R4.
+Connecter SW1 pin 2 à /~{RESET}.
+Modifie valeur R4 de R_1206_3216Metric en 10K.
+Change la référence schématique de REF** en R4.
+Ajouté R4 (empreinte 'Resistor_SMD:R_1206_3216Metric').
+Connecter R3 pin 2 à Net-(D3-Pad1).
+Connecter R3 pin 1 à GND.
+Mise à jour des propriétés de R3.
+Mise à jour R3 association de symbole de  à /79450c39-0f89-4ff7-9ee7-4a5db93f55d4.
+Modifie valeur R3 de R_1206_3216Metric en 1K.
+Change la référence schématique de REF** en R3.
+Ajouté U1 (empreinte 'Package_SO:SSOP-20_3.9x8.7mm_P0.635mm').
+Connecter U1 pin 6 à GND.
+Connecter U1 pin 5 à unconnected-(U1-Pad5).
+Connecter U1 pin 4 à /USART_RXD.
+Connecter U1 pin 3 à +5V.
+Connecter U1 pin 2 à /USART_RTS.
+Ajout net /USART_DTR.
+Mise à jour des propriétés de U1.
+Mise à jour U1 association de symbole de  à /8c7590a0-f201-4045-a4ae-60289e1e1fbf.
+Modifie valeur U1 de SSOP-20_3.9x8.7mm_P0.635mm en FT231XS.
+Change la référence schématique de REF** en U1.
+Modifie valeur J1 de SMA_Amphenol_901-143_Horizontal en Conn_Coaxial.
+Connecter SW2 pin 3 à +3.3V.
+Connecter SW2 pin 2 à Net-(SW2-Pad2).
+Ajout net Net-(SW2-Pad2).
+Connecter SW2 pin 1 à GND.
+Mise à jour des propriétés de SW2.
+Mise à jour SW2 association de symbole de  à /7a6cfff4-a027-4be7-b677-e723e85145a5.
+Modifie valeur SW2 de SW_E-Switch_EG1224_SPDT_Angled en SW_SPDT.
+Change la référence schématique de REF** en SW2.
+Ajouté SW2 (empreinte 'Button_Switch_THT:SW_E-Switch_EG1224_SPDT_Angled').
+Change la référence schématique de REF** en P1.
+Ajouté R3 (empreinte 'Resistor_SMD:R_1206_3216Metric').
+Connecter P1 pin S1 à GND.
+Connecter P1 pin B12 à GND.
+Connecter P1 pin B9 à VCOM.
+Connecter P1 pin B5 à unconnected-(P1-PadB5).
+Connecter P1 pin A12 à GND.
+Connecter P1 pin A9 à VCOM.
+Connecter P1 pin A5 à unconnected-(P1-PadA5).
+Mise à jour des propriétés de P1.
+Mise à jour P1 association de symbole de  à /fde9e7dd-3de9-47da-a3a0-d83197dc789f.
+Modifie valeur P1 de USB_C_Receptacle_GCT_USB4125 en USB_C_Plug_USB2.0.
+Connecter P1 pin S1 à GND.
+Ajouté P1 (empreinte 'INSA:USB_C_Receptacle_GCT_USB4125').
+Connecter J1 pin 2 à GND.
+Connecter J1 pin 2 à GND.
+Connecter J1 pin 2 à GND.
+Connecter J1 pin 2 à GND.
+Connecter J1 pin 1 à /RF.
+Ajout net /RF.
+Mise à jour des propriétés de J1.
+Mise à jour J1 association de symbole de  à /90a7d73a-4a55-4f9c-8bc4-c882a83242f0.
+Change la référence schématique de REF** en J1.
+Ajouté R2 (empreinte 'Resistor_SMD:R_1206_3216Metric').
+Connecter R2 pin 2 à Net-(D2-Pad1).
+Connecter R2 pin 1 à GND.
+Mise à jour des propriétés de R2.
+Mise à jour R2 association de symbole de  à /452adb26-c954-4f34-a0e5-5d6b65883489.
+Modifie valeur R2 de R_1206_3216Metric en 1K.
+Change la référence schématique de REF** en R2.
+Connecter P1 pin S1 à GND.
+Connecter R1 pin 2 à Net-(D1-Pad1).
+Connecter R1 pin 1 à /~{SLEEP}.
+Ajout net /~{SLEEP}.
+Mise à jour des propriétés de R1.
+Mise à jour R1 association de symbole de  à /9bff6f12-461c-43ed-a544-12cfec9893d2.
+Modifie valeur R1 de R_1206_3216Metric en 1K.
+Change la référence schématique de REF** en R1.
+Ajouté R1 (empreinte 'Resistor_SMD:R_1206_3216Metric').
+Connecter P1 pin S1 à GND.
+Attention: Pas d'équipotentielle pour symbole 'U3B1' pin '8'.
+Attention: Pas d'équipotentielle pour symbole 'U3B1' pin '14'.
+Erreur: P1 pad B4 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+Erreur: P1 pad A4 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+Erreur: P1 pad B1 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+Erreur: P1 pad A1 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+Erreur: P1 pad A6 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+Erreur: P1 pad A7 non trouvé en INSA:USB_C_Receptacle_GCT_USB4125.
+
+
+Info: Total warnings: 0, erreurs: 6.
