@@ -56,6 +56,10 @@
         }
       ],
       "drc_exclusions": [
+        "clearance|116540000|134510000|b4a8633f-9b51-4478-a807-233df5f82aae|fc9d13d8-bf0b-4ebe-bd5c-3dea9ef9dbcf",
+        "clearance|116990000|134510000|56f96ff4-6ea1-4647-afd6-654b3e1a45f9|fc9d13d8-bf0b-4ebe-bd5c-3dea9ef9dbcf",
+        "clearance|118640000|134760000|3419f815-772a-4281-8506-ffa42a28d209|fc9d13d8-bf0b-4ebe-bd5c-3dea9ef9dbcf",
+        "clearance|118640000|134760000|9695b505-8407-45d9-bab6-d91ec340d8d6|fc9d13d8-bf0b-4ebe-bd5c-3dea9ef9dbcf",
         "courtyards_overlap|107000001|105550001|1549af4f-6e2c-4428-ab85-94eb444d3f66|f3aa68f4-9b2d-41fb-8d43-ef9ae9f02520",
         "silk_over_copper|142500000|104445000|b2b8624d-729e-454d-90d0-9482d63bd0ef|cad86e5e-076b-44bd-b597-cc9126abcb23",
         "silk_over_copper|142500000|109565000|b2b8624d-729e-454d-90d0-9482d63bd0ef|30a751c5-a9a9-49f2-8b35-ea410604ed11",
@@ -68,11 +72,7 @@
         "silk_over_copper|85000000|134580000|578226f9-709c-47c4-afab-d031c8f5a9f2|6dd46b03-a139-4661-a56c-1c091379b234",
         "silk_over_copper|85000000|134580000|578226f9-709c-47c4-afab-d031c8f5a9f2|ad192d4d-5676-4eb5-8241-889c9a5c37fc",
         "silk_over_copper|85000000|134980000|578226f9-709c-47c4-afab-d031c8f5a9f2|0fe1e050-8018-46a7-8b5c-533116dc9b8c",
-        "track_dangling|118745000|126365000|b543642c-7e17-49b3-b9ec-3ad4be2cd798|00000000-0000-0000-0000-000000000000",
-        "via_dangling|127750000|126300000|b37ea845-79f0-47a9-84e6-5b9e853c913a|00000000-0000-0000-0000-000000000000",
-        "via_dangling|127750000|98300000|0ce43ead-9778-4300-bdc5-5fac8d8f2d29|00000000-0000-0000-0000-000000000000",
-        "via_dangling|99750000|126300000|4dd87ef2-3bcb-47a5-9ea7-b3683bf5384c|00000000-0000-0000-0000-000000000000",
-        "via_dangling|99750000|98300000|bb07ae45-6d83-4840-95e0-4db5b1144bd1|00000000-0000-0000-0000-000000000000"
+        "track_dangling|120970000|130490000|fa21e252-c26a-4628-87e0-bdbf3cf66def|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -160,6 +160,10 @@
           "drill": 0.3
         },
         {
+          "diameter": 0.7,
+          "drill": 0.4
+        },
+        {
           "diameter": 0.8,
           "drill": 0.4
         }
@@ -174,9 +178,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "multiple_net_names|1638300|1371600|297812d9-bab7-4f76-a1bb-4a23b5f394cd|cdf821b6-7d0c-43b0-9f85-f5225981e183"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
