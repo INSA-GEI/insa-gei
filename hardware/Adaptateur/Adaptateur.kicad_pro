@@ -399,7 +399,7 @@
       "idf": "",
       "netlist": "Adaptateur.net",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Meca/Adaptateur.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
