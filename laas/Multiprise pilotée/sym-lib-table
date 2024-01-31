@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Multiprise pilotée")(type "KiCad")(uri "${KIPRJMOD}/Multiprise pilotée.kicad_sym")(options "")(descr ""))
+)

@@ -1,0 +1,81 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid ad17dd83-c10a-426e-803d-3b2dda0cc379)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 149.86 106.68) (size 54.61 29.21) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 5b1c34c0-fac2-48fe-a40d-d33e3b5a6f25)
+    (property "Sheetname" "MCU" (at 149.86 105.9684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Mcu.kicad_sch" (at 149.86 136.4746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Multiprise pilotée"
+        (path "/ad17dd83-c10a-426e-803d-3b2dda0cc379" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 58.42 43.18) (size 57.15 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7b0b359f-83f5-4bfc-867e-e59ab7e7da3c)
+    (property "Sheetname" "DC supplies" (at 58.42 42.4684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "DC_supplies.kicad_sch" (at 58.42 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Multiprise pilotée"
+        (path "/ad17dd83-c10a-426e-803d-3b2dda0cc379" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 151.13 43.18) (size 55.88 30.48) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid ff439e0e-b879-40be-a702-6e5da693c895)
+    (property "Sheetname" "Power supply and relays" (at 151.13 42.4684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 151.13 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (pin "~{CS_Relay}" input (at 207.01 52.07 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 6e3ad4e8-c07b-4795-86ba-f6bc60fb84af)
+    )
+    (pin "SCLK" input (at 207.01 55.88 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid f2f165fd-1496-445d-83a1-781dd3c61f3a)
+    )
+    (pin "~{RESET_IO}" input (at 207.01 59.69 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 1c29fae0-f26a-4eae-a70e-46d944bc1443)
+    )
+    (pin "MOSI" input (at 207.01 63.5 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+      (uuid 0218cc86-272b-452d-9666-c9e8602f2643)
+    )
+    (instances
+      (project "Multiprise pilotée"
+        (path "/ad17dd83-c10a-426e-803d-3b2dda0cc379" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
