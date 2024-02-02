@@ -74,6 +74,9 @@ Project Logs for*/
 # Inventor
 OldVersions/
 
+# Backup files
+*.bak
+
 # Eagle
 *.s#*
 *.b#*
