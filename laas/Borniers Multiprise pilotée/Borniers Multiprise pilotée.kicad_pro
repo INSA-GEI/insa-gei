@@ -173,12 +173,11 @@
       ],
       "track_widths": [
         0.0,
-        0.25,
+        0.0,
         0.3,
-        0.35,
         0.4,
         0.5,
-        0.75,
+        0.7,
         1.0,
         1.5,
         2.0
@@ -187,10 +186,6 @@
         {
           "diameter": 0.0,
           "drill": 0.0
-        },
-        {
-          "diameter": 0.6,
-          "drill": 0.3
         },
         {
           "diameter": 0.8,
@@ -426,7 +421,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Multiprise pilotée.kicad_pro",
+    "filename": "Borniers Multiprise pilotée.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -503,20 +498,8 @@
   },
   "sheets": [
     [
-      "ad17dd83-c10a-426e-803d-3b2dda0cc379",
+      "57b1ac28-6c04-4466-aca2-c9cefdf628aa",
       ""
-    ],
-    [
-      "ff439e0e-b879-40be-a702-6e5da693c895",
-      "Power supply and relays"
-    ],
-    [
-      "5b1c34c0-fac2-48fe-a40d-d33e3b5a6f25",
-      "MCU"
-    ],
-    [
-      "7b0b359f-83f5-4bfc-867e-e59ab7e7da3c",
-      "DC supplies"
     ]
   ],
   "text_variables": {}
