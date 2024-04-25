@@ -3,11 +3,68 @@
 
 #include "config.h"
 
+SoftSPI::SoftSPI() {
+}
+
+SoftSPI::~SoftSPI() {
+  this->end();
+}
+
+void SoftSPI::begin(void) {
+  pinMode(DATAOUT, OUTPUT);
+  pinMode(SPICLOCK, OUTPUT);
+
+  digitalWrite(DATAOUT, LOW);
+  digitalWrite(SPICLOCK, LOW);
+}
+
+void SoftSPI::end(void) {
+  digitalWrite(DATAOUT, LOW);
+  digitalWrite(SPICLOCK, LOW);
+
+  pinMode(DATAOUT, INPUT);
+  pinMode(SPICLOCK, INPUT);
+}
+
+void SoftSPI::setDebugSerial(SerialUSB &serial) {
+  this->debugSerial = serial;
+}
+
+void SoftSPI::send(uint8_t data) {
+  
+  digitalWrite(DATAOUT, LOW);
+  digitalWrite(SPICLOCK, LOW);
+
+  //this->debugSerial.println("SoftSPI::Send: val=0x" + String(data,HEX));
+
+  for (int i=7; i>=0; i--) {
+    delay(1);
+    
+    if (data & (0x1<<i)) {
+      digitalWrite(DATAOUT, HIGH);
+      //this->debugSerial.println("SoftSPI::Send: bit " + String(i) + "=1");
+    }
+    else {
+      digitalWrite(DATAOUT, LOW);
+      //this->debugSerial.println("SoftSPI::Send: bit " + String(i) + "=0");
+    }
+
+    delay(1);
+
+    //this->debugSerial.println("SoftSPI::Send: clock high");
+    digitalWrite(SPICLOCK, HIGH);
+    delay(1);
+
+    //this->debugSerial.println("SoftSPI::Send: clock low");
+    digitalWrite(SPICLOCK, LOW);
+  }
+
+  digitalWrite(DATAOUT, LOW);
+}
+
 IOControl::IOControl(SerialUSB &serial) {
   this->debugSerial = serial;
 
-  pinMode(DATAOUT, OUTPUT);
-  pinMode(SPICLOCK, OUTPUT);
   pinMode(CS_RELAY, OUTPUT);
   pinMode(CS_PWR_DC, OUTPUT);
   pinMode(LATCH, OUTPUT);
@@ -26,14 +83,14 @@ IOControl::IOControl(SerialUSB &serial) {
 
   //SPI.setSCK(SPICLOCK);
   //SPI.setTX(DATAOUT);
-
-  SPI.begin();
+  this->myspi.setDebugSerial(serial);
+  this->myspi.begin();
 
 //   this->myspi->begin();  //Enable SPI
 }
 
 IOControl::~IOControl() {
-  SPI.end();  //Disable SPI
+  this->myspi.end();  //Disable SPI
 }
 
 void IOControl::writeRelay(uint8_t val) {
@@ -42,14 +99,14 @@ void IOControl::writeRelay(uint8_t val) {
   //this->debugSerial.println("writeRelay param = 0x" + String(val, HEX));
   data = val>>1;
 
-  this->debugSerial.println("writeRelay = 0x" + String(data, HEX));
+  //this->debugSerial.println("writeRelay = 0x" + String(data, HEX));
 
   digitalWrite(CS_RELAY, LOW);  //Assert CS_RELAY
-  delay(20);
+  delay(1);
 
-  //SPI.transfer(data);
+  this->myspi.send(data);
 
-  delay(20);
+  delay(1);
   digitalWrite(CS_RELAY, HIGH);  //Desassert CS_RELAY
 }
 
@@ -67,18 +124,18 @@ void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) 
   else
     data= 0x3<<4 | data;
      
-  this->debugSerial.println("WriteDC = 0x" + String(data, HEX));
+  //this->debugSerial.println("WriteDC = 0x" + String(data, HEX));
 
   digitalWrite(CS_PWR_DC, HIGH);  //Assert CS_PWR_DC
-  delay(20);
+  delay(1);
 
-  //SPI.transfer(data);
+  this->myspi.send(data);
 
-  delay(20);
+  delay(1);
   digitalWrite(CS_PWR_DC, LOW);  //Desassert CS_PWR_DC
-
+  delay(1);
   digitalWrite(LATCH, HIGH);
-  delay(20);
+  delay(1);
   digitalWrite(LATCH, LOW);
 }
 
@@ -86,7 +143,7 @@ void IOControl::writeVARDC(uint8_t val) {
   uint8_t data=val;
 
   //TODO
-  this->debugSerial.println("writeVARDC = " + String(data));
+  //this->debugSerial.println("writeVARDC = " + String(data));
 }
 
 bool IOControl::resetAll(void) {

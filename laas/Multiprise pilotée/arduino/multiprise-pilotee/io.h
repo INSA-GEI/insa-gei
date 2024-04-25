@@ -5,6 +5,21 @@
 #include <SPI.h>
 #include "SerialUSB.h"
 
+class SoftSPI {
+public:
+  SoftSPI();
+  ~SoftSPI();
+
+  void begin(void);
+  void end(void);
+  
+  void setDebugSerial(SerialUSB &serial);
+
+  void send(uint8_t data);
+private:
+  SerialUSB debugSerial;
+};
+
 class IOControl {
 public:
   IOControl(SerialUSB &serial);
@@ -80,6 +95,7 @@ private:
   float statusVAR=0.0;
 
   SerialUSB debugSerial;
+  SoftSPI   myspi;
 
   void writeRelay(uint8_t val);
   void writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol);
