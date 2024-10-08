@@ -17,14 +17,20 @@ void setup() {
   myserial.begin(9600);
   //myserial.ignoreFlowControl();
 
-  io= new IOControl(myserial);
+  /*io= new IOControl(myserial);
   if (io==NULL) {
     while(1);
-  }
+  }*/
 
-  cmd = new Command(io);
+  // Wait until IO are correctly enabled
+  while ((io=new IOControl(myserial))==NULL);
+
+  // Wait until command manager is correctly setup
+  while ((cmd = new Command(io)) == NULL);
 
   commandAvailable=false;
+
+  myserial.println("Ready\n\r");
 }
 
 void loop() {
@@ -35,8 +41,16 @@ void loop() {
     s.concat((char)myserial.read());
     //myserial.printf("length= %i (%02X)\n", s.length(), (int)s[s.length()-1]);
 
-    if ((s[s.length()-1]=='\n') || (s[s.length()-1]=='\r')) {
-      commandAvailable=true;
+    // if cmd length is more then CMD_MAX_LENGTH, drop it
+    if (s.length() > CMD_MAX_LENGTH) {
+      s = "";
+    } else {
+      // if cmd ending char is present, command is correctly received 
+      if (s.length()>0 && 
+         ((s[s.length()-1]=='\n') || (s[s.length()-1]=='\r'))) {
+
+        commandAvailable=true;
+      }
     }
   }
 
@@ -47,7 +61,7 @@ void loop() {
     //myserial.print('\n');
     
     ans = cmd->process(s);
- 
+
     myserial.print(ans);
     myserial.print('\n');
     

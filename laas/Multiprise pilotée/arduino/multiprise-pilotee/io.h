@@ -4,6 +4,7 @@
 #include <Arduino.h>
 #include <SPI.h>
 #include "SerialUSB.h"
+#include <hardware/pwm.h>
 
 class SoftSPI {
 public:
@@ -93,6 +94,9 @@ private:
   uint8_t statusDC5V=0;
   VPOLValue_Typedef statusVPOL=vpolOff;
   float statusVAR=0.0;
+
+  uint slice;
+  uint channel;
 
   SerialUSB debugSerial;
   SoftSPI   myspi;

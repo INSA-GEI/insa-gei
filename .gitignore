@@ -61,6 +61,10 @@ dkms.conf
 *.tiff
 *.gif
 *.bmp
+*.xcf
+
+# Videos
+*.mp4
 
 # Documents divers
 *.pdf

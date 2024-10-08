@@ -87,6 +87,18 @@ IOControl::IOControl(SerialUSB &serial) {
   this->myspi.begin();
 
 //   this->myspi->begin();  //Enable SPI
+  const uint pwm_pin = 6; 
+  gpio_set_function(pwm_pin, GPIO_FUNC_PWM); // fonction PWM sur GP6   
+  this->slice = pwm_gpio_to_slice_num(pwm_pin); // slice associée à GP6   
+  this->channel = pwm_gpio_to_channel(pwm_pin);  // channel associée à GP6 
+  
+  pwm_set_phase_correct (this->slice, false); // mode phase-correct non activé 
+  
+  pwm_set_clkdiv_int_frac (this->slice, 1, 0); // diviseur de fréquence = 38 + 3/16 
+  pwm_set_wrap(this->slice, 10000);  // valeur wrap pour fixer la fréquence 
+  pwm_set_chan_level(this->slice, this->channel, 10000 / 10); // rapport cyclique = 10% pour servo à 180° 
+  
+  pwm_set_enabled(this->slice, true); // activer le signal 
 }
 
 IOControl::~IOControl() {
@@ -140,10 +152,26 @@ void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) 
 }
 
 void IOControl::writeVARDC(uint8_t val) {
-  uint8_t data=val;
+  uint16_t duty;
+  const uint16_t Computed_Duties[] = 
+  {
+    1280, 1300, 1320, 1335, 1350,                                 // 1.5V -> 1.9V
+    1370, 1385, 1400, 1420, 1440, 1460, 1480, 1510, 1540, 1580,   // 2.0V -> 2.9V
+    1620, 1670, 1730, 1810, 1900, 2000, 2140, 2320, 2520, 2860,   // 3.0V -> 3.9V
+    3400, 3980, 4720, 5400, 6200, 6900, 7560, 8380, 9300, 10000,  // 4.0V -> 4.9V
+    10000                                                         // 5.0V
+  };
+  
+  //this->debugSerial.println("writeVARDC = " + String(val));
 
-  //TODO
-  //this->debugSerial.println("writeVARDC = " + String(data));
+  if (val == 0)
+    duty=0;
+  else
+    duty = Computed_Duties[val-15];
+  
+  //this->debugSerial.println("duty = " + String(duty));
+
+  pwm_set_chan_level(this->slice, this->channel, duty);
 }
 
 bool IOControl::resetAll(void) {
