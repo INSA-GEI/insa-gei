@@ -38,7 +38,7 @@ void SoftSPI::send(uint8_t data) {
   //this->debugSerial.println("SoftSPI::Send: val=0x" + String(data,HEX));
 
   for (int i=7; i>=0; i--) {
-    delay(1);
+    delay(5);
     
     if (data & (0x1<<i)) {
       digitalWrite(DATAOUT, HIGH);
@@ -49,16 +49,17 @@ void SoftSPI::send(uint8_t data) {
       //this->debugSerial.println("SoftSPI::Send: bit " + String(i) + "=0");
     }
 
-    delay(1);
+    delay(5);
 
     //this->debugSerial.println("SoftSPI::Send: clock high");
     digitalWrite(SPICLOCK, HIGH);
-    delay(1);
+    delay(5);
 
     //this->debugSerial.println("SoftSPI::Send: clock low");
     digitalWrite(SPICLOCK, LOW);
   }
 
+  delay(5);
   digitalWrite(DATAOUT, LOW);
 }
 
@@ -139,15 +140,15 @@ void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) 
   //this->debugSerial.println("WriteDC = 0x" + String(data, HEX));
 
   digitalWrite(CS_PWR_DC, HIGH);  //Assert CS_PWR_DC
-  delay(1);
+  delay(10);
 
   this->myspi.send(data);
 
-  delay(1);
+  delay(10);
   digitalWrite(CS_PWR_DC, LOW);  //Desassert CS_PWR_DC
-  delay(1);
+  delay(10);
   digitalWrite(LATCH, HIGH);
-  delay(1);
+  delay(10);
   digitalWrite(LATCH, LOW);
 }
 

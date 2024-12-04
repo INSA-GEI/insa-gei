@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="667.08mm" height="513.08mm" viewBox="0 0 667.08 513.08" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<g id="Body" transform="translate(333.540000,256.540000) scale(1,-1)">
+<path id="Body_f0000"  d="M -327.0 250.0 L -327.0 250.0 L 327.0 250.0 L 327.0 250.0 L -327.0 250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<path id="Body_f0001"  d="M 327.0 250.0 L 327.0 250.0 L 327.0 -250.0 L 327.0 -250.0 L 327.0 250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<path id="Body_f0002"  d="M 327.0 -250.0 L 327.0 -250.0 L -327.0 -250.0 L -327.0 -250.0 L 327.0 -250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<path id="Body_f0003"  d="M -327.0 -250.0 L -327.0 -250.0 L -327.0 250.0 L -327.0 250.0 L -327.0 -250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<path id="Body_f0004"  d="M -327.0 250.0 L 327.0 250.0 L 327.0 -250.0 L -327.0 -250.0 L -327.0 250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<path id="Body_f0005"  d="M 327.0 250.0 L 327.0 -250.0 L -327.0 -250.0 L -327.0 250.0 L 327.0 250.0 Z " stroke="#191919" stroke-width="0.35 px" style="stroke-width:0.35;stroke-miterlimit:4;stroke-dasharray:none;stroke-linecap:square;fill:#cccccc;fill-opacity:1.0;fill-rule: evenodd"/>
+<title>b'Corps'</title>
+</g>
+</svg>

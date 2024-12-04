@@ -3,15 +3,15 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "7.0.10-7.0.10~ubuntu23.04.1"
+      "Version": "8.0.6-8.0.6-0~ubuntu22.04.1"
     },
-    "CreationDate": "2024-05-23T10:10:21+02:00"
+    "CreationDate": "2024-12-04T16:47:07+01:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
-      "Name": "Multiprise pilot_e",
+      "Name": "Multiprise pilotée",
       "GUID": "4d756c74-6970-4726-9973-652070696c6f",
-      "Revision": "1.2"
+      "Revision": "1.3"
     },
     "Size": {
       "X": 184.1,
@@ -24,62 +24,62 @@
   "DesignRules": [
     {
       "Layers": "Outer",
-      "PadToPad": 0.0,
-      "PadToTrack": 0.0,
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.3,
-      "TrackToRegion": 0.2,
-      "RegionToRegion": 0.2
+      "MinLineWidth": 0.25,
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
     }
   ],
   "FilesAttributes": [
     {
-      "Path": "Multiprise pilot\\u00E9e-F_Cu.gbr",
+      "Path": "Multiprise pilotée-F_Cu.gbr",
       "FileFunction": "Copper,L1,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-B_Cu.gbr",
+      "Path": "Multiprise pilotée-B_Cu.gbr",
       "FileFunction": "Copper,L2,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-F_Adhesive.gbr",
+      "Path": "Multiprise pilotée-F_Adhesive.gbr",
       "FileFunction": "Glue,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-B_Adhesive.gbr",
+      "Path": "Multiprise pilotée-B_Adhesive.gbr",
       "FileFunction": "Glue,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-F_Paste.gbr",
+      "Path": "Multiprise pilotée-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-B_Paste.gbr",
+      "Path": "Multiprise pilotée-B_Paste.gbr",
       "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-F_Silkscreen.gbr",
+      "Path": "Multiprise pilotée-F_Silkscreen.gbr",
       "FileFunction": "Legend,Top",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-B_Silkscreen.gbr",
+      "Path": "Multiprise pilotée-B_Silkscreen.gbr",
       "FileFunction": "Legend,Bot",
       "FilePolarity": "Positive"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-F_Mask.gbr",
+      "Path": "Multiprise pilotée-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
       "FilePolarity": "Negative"
     },
     {
-      "Path": "Multiprise pilot\\u00E9e-B_Mask.gbr",
+      "Path": "Multiprise pilotée-B_Mask.gbr",
       "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     }
@@ -95,24 +95,29 @@
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Top Solder Mask"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "F.Cu"
     },
     {
       "Type": "Dielectric",
+      "Thickness": 1.51,
       "Material": "FR4",
       "Name": "F.Cu/B.Cu",
       "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
+      "Thickness": 0.035,
       "Name": "B.Cu"
     },
     {
       "Type": "SolderMask",
+      "Thickness": 0.01,
       "Name": "Bottom Solder Mask"
     },
     {
