@@ -58,7 +58,18 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "clearance|144780000|53657500|90bec26b-e4b1-4d4c-a9ce-3ed8fd9b7b60|7b9a9cdd-013c-4dde-9b75-a9bf834b2637",
+        "clearance|145276432|135572500|61bafeca-ca14-41a8-ad4b-0dd36f5a14e0|5279ad51-966f-486c-9d66-ec90dea9feae",
+        "clearance|145421432|53657500|d057e1e6-56f3-4e3a-841b-e3a33d9f2730|7b9a9cdd-013c-4dde-9b75-a9bf834b2637",
+        "clearance|148962500|121937500|b95d4654-4332-46ac-bbc2-2d4fee25f734|8b611612-aa78-4c79-9326-0e47d6e0f2d1",
+        "clearance|148962500|135937500|7ab9b876-d866-4bc3-9151-4953d0d0d990|c1d4893b-eee0-4bbd-992c-bd061151aebe",
+        "clearance|148962500|53437500|dbbb5f33-e6ff-40a8-9743-6cc6a87d78a6|7b9a9cdd-013c-4dde-9b75-a9bf834b2637",
+        "clearance|153962500|124273287|1a7cb9b6-c8c4-4e26-a4b2-e86390e19c39|f58d8434-0ef8-4f53-a678-d28cbba9a812",
+        "clearance|158962500|125687500|f58d8434-0ef8-4f53-a678-d28cbba9a812|fc2ab57e-d2aa-442a-b06e-399db29ec845",
+        "lib_footprint_issues|67595000|57082500|3fd4aacf-73f9-452a-b287-4912be1bf8ec|00000000-0000-0000-0000-000000000000",
+        "starved_thermal|108488000|62230000|3e6e8153-49cc-48da-94e8-81d11fadba60|bc8a2899-7e16-4502-876b-ecf3a82598a4|F.Cu"
+      ],
       "meta": {
         "version": 2
       },
@@ -622,7 +633,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
+      "plot": "Gerber/",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "",
