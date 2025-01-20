@@ -1,14 +1,14 @@
 #ifndef __CONFIG_H__
 #define __CONFIG_H__
 
-#define MAJOR_VER         1
-#define MINOR_VER         2
+#define MAJOR_VER         2
+#define MINOR_VER         0
 
 #define CMD_MAX_LENGTH    20
 
 #define AC_CHANNEL_MAX    4
-#define DC3V_CHANNEL_MAX  3
-#define DC5V_CHANNEL_MAX  1
+#define DC3V_CHANNEL_MAX  4
+#define DC5V_CHANNEL_MAX  4
 
 // Pin are named after RP2040 one, not XIAO one
 #define DATAOUT           3 //MOSI  Arduino/XIAO equivalent: 10

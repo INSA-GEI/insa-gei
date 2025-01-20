@@ -123,19 +123,20 @@ void IOControl::writeRelay(uint8_t val) {
   digitalWrite(CS_RELAY, HIGH);  //Desassert CS_RELAY
 }
 
-void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) {
+//void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) {
+void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V) {
   uint8_t data;
 
   //this->debugSerial.println("WriteDC params: 0x" + String(val_3V, HEX) + "/0x" + String(val_5V, HEX) + "/0x" + String(vpol, HEX));
 
-  data = ((val_5V>>1)<<3) | (val_3V>>1);
+  data = ((val_5V>>1)<<4) | (val_3V>>1);
 
-  if (vpol == vpolPositive) 
-    data= (0xA<<4) | data;
-  else if (vpol == vpolNegative) 
-    data= (0x5<<4) | data;
-  else
-    data= 0x3<<4 | data;
+  // if (vpol == vpolPositive) 
+  //   data= (0xA<<4) | data;
+  // else if (vpol == vpolNegative) 
+  //   data= (0x5<<4) | data;
+  // else
+  //   data= 0x3<<4 | data;
      
   //this->debugSerial.println("WriteDC = 0x" + String(data, HEX));
 
@@ -152,28 +153,28 @@ void IOControl::writeDC(uint8_t val_3V, uint8_t val_5V, VPOLValue_Typedef vpol) 
   digitalWrite(LATCH, LOW);
 }
 
-void IOControl::writeVARDC(uint8_t val) {
-  uint16_t duty;
-  const uint16_t Computed_Duties[] = 
-  {
-    1280, 1300, 1320, 1335, 1350,                                 // 1.5V -> 1.9V
-    1370, 1385, 1400, 1420, 1440, 1460, 1480, 1510, 1540, 1580,   // 2.0V -> 2.9V
-    1620, 1670, 1730, 1810, 1900, 2000, 2140, 2320, 2520, 2860,   // 3.0V -> 3.9V
-    3400, 3980, 4720, 5400, 6200, 6900, 7560, 8380, 9300, 10000,  // 4.0V -> 4.9V
-    10000                                                         // 5.0V
-  };
+// void IOControl::writeVARDC(uint8_t val) {
+//   uint16_t duty;
+//   const uint16_t Computed_Duties[] = 
+//   {
+//     1280, 1300, 1320, 1335, 1350,                                 // 1.5V -> 1.9V
+//     1370, 1385, 1400, 1420, 1440, 1460, 1480, 1510, 1540, 1580,   // 2.0V -> 2.9V
+//     1620, 1670, 1730, 1810, 1900, 2000, 2140, 2320, 2520, 2860,   // 3.0V -> 3.9V
+//     3400, 3980, 4720, 5400, 6200, 6900, 7560, 8380, 9300, 10000,  // 4.0V -> 4.9V
+//     10000                                                         // 5.0V
+//   };
   
-  //this->debugSerial.println("writeVARDC = " + String(val));
+//   //this->debugSerial.println("writeVARDC = " + String(val));
 
-  if (val == 0)
-    duty=0;
-  else
-    duty = Computed_Duties[val-15];
+//   if (val == 0)
+//     duty=0;
+//   else
+//     duty = Computed_Duties[val-15];
   
-  //this->debugSerial.println("duty = " + String(duty));
+//   //this->debugSerial.println("duty = " + String(duty));
 
-  pwm_set_chan_level(this->slice, this->channel, duty);
-}
+//   pwm_set_chan_level(this->slice, this->channel, duty);
+// }
 
 bool IOControl::resetAll(void) {
   int val = 0;
@@ -184,12 +185,13 @@ bool IOControl::resetAll(void) {
   // optimisation for juste one call to writeDC (for resetting dc3v dc5v and VPOL, all on the same SPI)
   this->statusDC3V=0;
   this->statusDC5V=0;
-  this->statusVPOL=vpolOff;
+  //this->statusVPOL=vpolOff;
 
-  this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+  //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+  this->writeDC(this->statusDC3V, this->statusDC5V);
 
-  if (this->setVARChannel(0.0) != true)
-    val++;
+  // if (this->setVARChannel(0.0) != true)
+  //   val++;
 
   if (val)
     return false;
@@ -241,16 +243,18 @@ bool IOControl::setDC3VChannel(uint8_t channel) {
   bool status = true;
 
   if (channel == 0) {
-    this->statusDC3V = 0x2 + 0x4 + 0x8;
+    this->statusDC3V = 0x2 + 0x4 + 0x8 + 0x10;
 
-    this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    this->writeDC(this->statusDC3V, this->statusDC5V);
   } else {
     if ((channel < 1) || (channel > DC3V_CHANNEL_MAX))
       status = false;
     else {
       this->statusDC3V |= (1 << channel);
 
-      this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
     }
   }
 
@@ -263,14 +267,16 @@ bool IOControl::clearDC3VChannel(uint8_t channel) {
   if (channel == 0) {
     this->statusDC3V = 0;
 
-    this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    this->writeDC(this->statusDC3V, this->statusDC5V);
   } else {
     if ((channel < 1) || (channel > DC3V_CHANNEL_MAX))
       status = false;
     else {
       this->statusDC3V &= ~(1 << channel);
 
-      this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
     }
   }
 
@@ -281,16 +287,18 @@ bool IOControl::setDC5VChannel(uint8_t channel) {
   bool status = true;
 
   if (channel == 0) {
-    this->statusDC5V = 0x2;
+    this->statusDC5V = 0x2 + 0x4 + 0x8 + 0x10;
 
-    this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
   } else {
     if ((channel < 1) || (channel > DC5V_CHANNEL_MAX))
       status = false;
     else {
       this->statusDC5V |= (1 << channel);
 
-      this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
     }
   }
 
@@ -303,32 +311,34 @@ bool IOControl::clearDC5VChannel(uint8_t channel) {
   if (channel == 0) {
     this->statusDC5V = 0;
 
-    this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+    //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
   } else {
     if ((channel < 1) || (channel > DC5V_CHANNEL_MAX))
       status = false;
     else {
       this->statusDC5V &= ~(1 << channel);
 
-      this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      //this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+      this->writeDC(this->statusDC3V, this->statusDC5V);
     }
   }
 
   return status;
 }
 
-bool IOControl::setVPOLChannel(VPOLValue_Typedef val) {
-  this->statusVPOL = val;
+// bool IOControl::setVPOLChannel(VPOLValue_Typedef val) {
+//   this->statusVPOL = val;
 
-  this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
+//   this->writeDC(this->statusDC3V, this->statusDC5V, this->statusVPOL);
 
-  return true;
-}
+//   return true;
+// }
 
-bool IOControl::setVARChannel(float val) {
-  this->statusVAR = val;
+// bool IOControl::setVARChannel(float val) {
+//   this->statusVAR = val;
 
-  this->writeVARDC((uint8_t)(this->statusVAR*10));
+//   this->writeVARDC((uint8_t)(this->statusVAR*10));
 
-  return true;
-}
+//   return true;
+// }

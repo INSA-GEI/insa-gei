@@ -203,7 +203,7 @@ String Command::process(String s) {
       errorStatus=invalidParameter;
     }
     else {
-      channel = ASCII_TO_CHAR(channel); // set channel in integer range [1..3] not ascii range ['1'..'3']
+      channel = ASCII_TO_CHAR(channel); // set channel in integer range [1..4] not ascii range ['1'..'4']
 
       if (value == '0') {
         if (this->io->clearDC3VChannel(channel) != true) {
@@ -266,7 +266,7 @@ String Command::process(String s) {
       errorStatus=invalidParameter;
     }
     else {
-      channel = ASCII_TO_CHAR(channel); // set channel in integer range [1..1] not ascii range ['1'..'1']
+      channel = ASCII_TO_CHAR(channel); // set channel in integer range [1..4] not ascii range ['1'..'4']
 
       if (value == '0') {
         if (this->io->clearDC5VChannel(channel) != true) {
@@ -285,73 +285,73 @@ String Command::process(String s) {
     }
   }
 
-  /*
-   * Command ATVPOL= -> Set VPOL output Vpos, Vneg or off
-   */
-  else if (s.indexOf(CMD_ATVPOL) == 0) {
-    if (s[strlen(CMD_ATVPOL)]=='+') {
-      if (this->io->setVPOLChannel(IOControl::vpolPositive) != true) { // parameter is equal to + -> set positive 5V
-        ans = ANS_ERR;
-        errorStatus = hardwareError;
-      } 
-    } else if (s[strlen(CMD_ATVPOL)]=='-') {
-      if (this->io->setVPOLChannel(IOControl::vpolNegative) != true) { // parameter is equal to - -> set negative 5V
-        ans = ANS_ERR;
-        errorStatus = hardwareError;
-      } 
-    } else if (s[strlen(CMD_ATVPOL)]=='0') {
-      if (this->io->setVPOLChannel(IOControl::vpolOff) != true) { // parameter is equal to 0 -> set VPOL off
-        ans = ANS_ERR;
-        errorStatus = hardwareError;
-      } 
-    } else { // Invalid parameter 
-      ans= ANS_ERR;
-      errorStatus = invalidParameter;
-    }
-  } 
+  // /*
+  //  * Command ATVPOL= -> Set VPOL output Vpos, Vneg or off
+  //  */
+  // else if (s.indexOf(CMD_ATVPOL) == 0) {
+  //   if (s[strlen(CMD_ATVPOL)]=='+') {
+  //     if (this->io->setVPOLChannel(IOControl::vpolPositive) != true) { // parameter is equal to + -> set positive 5V
+  //       ans = ANS_ERR;
+  //       errorStatus = hardwareError;
+  //     } 
+  //   } else if (s[strlen(CMD_ATVPOL)]=='-') {
+  //     if (this->io->setVPOLChannel(IOControl::vpolNegative) != true) { // parameter is equal to - -> set negative 5V
+  //       ans = ANS_ERR;
+  //       errorStatus = hardwareError;
+  //     } 
+  //   } else if (s[strlen(CMD_ATVPOL)]=='0') {
+  //     if (this->io->setVPOLChannel(IOControl::vpolOff) != true) { // parameter is equal to 0 -> set VPOL off
+  //       ans = ANS_ERR;
+  //       errorStatus = hardwareError;
+  //     } 
+  //   } else { // Invalid parameter 
+  //     ans= ANS_ERR;
+  //     errorStatus = invalidParameter;
+  //   }
+  // } 
   
-  /*
-   * Request ATVPOL? -> get VPOL status
-   */
-  else if (s.indexOf(REQ_ATVPOL) == 0) {
-    IOControl::VPOLValue_Typedef val = this->io->getVPOLChannel();
+  // /*
+  //  * Request ATVPOL? -> get VPOL status
+  //  */
+  // else if (s.indexOf(REQ_ATVPOL) == 0) {
+  //   IOControl::VPOLValue_Typedef val = this->io->getVPOLChannel();
 
-    if (val == IOControl::vpolPositive)
-      ans = String("VPOS");
-    else if (val == IOControl::vpolNegative)
-      ans = String("VNEG");
-    else 
-      ans = String("OFF");
-  } 
+  //   if (val == IOControl::vpolPositive)
+  //     ans = String("VPOS");
+  //   else if (val == IOControl::vpolNegative)
+  //     ans = String("VNEG");
+  //   else 
+  //     ans = String("OFF");
+  // } 
 
-  /*
-   * Command CMD_ATVAR= -> Set VAR output 
-   */
-  else if (s.indexOf(CMD_ATVAR) == 0) {
-    float value;
-    s.remove(0,strlen(CMD_ATVAR)); // remove leading command
+  // /*
+  //  * Command CMD_ATVAR= -> Set VAR output 
+  //  */
+  // else if (s.indexOf(CMD_ATVAR) == 0) {
+  //   float value;
+  //   s.remove(0,strlen(CMD_ATVAR)); // remove leading command
 
-    value = s.toFloat();
+  //   value = s.toFloat();
 
-    if ((value!=0.0) &&
-        ((value<1.5) || (value>5.0))) {
-      ans= ANS_ERR;
-      errorStatus = invalidParameter;
-    }
-    else if (this->io->setVARChannel(value) != true) {
-      ans= ANS_ERR;
-      errorStatus = hardwareError;
-    }
-  } 
+  //   if ((value!=0.0) &&
+  //       ((value<1.5) || (value>5.0))) {
+  //     ans= ANS_ERR;
+  //     errorStatus = invalidParameter;
+  //   }
+  //   else if (this->io->setVARChannel(value) != true) {
+  //     ans= ANS_ERR;
+  //     errorStatus = hardwareError;
+  //   }
+  // } 
 
-  /*
-   * Request ATVAR? -> get VAR status
-   */
-  else if (s.indexOf(REQ_ATVAR) == 0) {
-    float val = this->io->getVARChannel();
+  // /*
+  //  * Request ATVAR? -> get VAR status
+  //  */
+  // else if (s.indexOf(REQ_ATVAR) == 0) {
+  //   float val = this->io->getVARChannel();
 
-    ans = String(val);
-  } 
+  //   ans = String(val);
+  // } 
 
   /*
    * Command AT -> simple ping
