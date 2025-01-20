@@ -122,7 +122,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "f835c910-2061-4b19-af56-b7c9c86995ea")
@@ -134,7 +134,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "203accd2-8061-41b0-b51e-fe04810654e6")
@@ -146,7 +146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1a2b0f15-a8ac-426a-bb8a-0ce306da23da")
@@ -158,7 +158,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e6d984fe-49e6-46ce-8bbc-05393e8cacf1")
@@ -337,7 +337,7 @@
 			(uuid "050aed96-9d37-4537-9f2c-f7e1de48710a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "e75d1918-d05e-4574-ac88-15726ea722d6")
 			(effects
@@ -399,7 +399,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D7"
-			(at 0 -1.82 360)
+			(at -0.12 -2.145 0)
 			(layer "F.SilkS")
 			(uuid "20726397-1da0-43c7-9307-5e15b9685e3d")
 			(effects
@@ -410,7 +410,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "7c4fae99-6420-4110-8bf9-67d3a6a01c4a")
 			(effects
@@ -585,7 +585,7 @@
 			(uuid "297f5182-432d-4318-9696-2e975de53c1a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "c7cb7448-a668-4c3d-9c5d-4b028b870162")
 			(effects
@@ -634,7 +634,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D6"
-			(at 0 -1.82 360)
+			(at -0.16 -2.17 0)
 			(layer "F.SilkS")
 			(uuid "79007cd3-e1ae-43ba-8415-23bd6a247707")
 			(effects
@@ -645,7 +645,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "fbe37541-6252-4ee7-8dd1-ac77a414f5b3")
 			(effects
@@ -820,7 +820,7 @@
 			(uuid "169ad7f9-6591-43ac-b205-47b5cf8ee0d1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ffd61c83-e4d3-46a9-8573-4dd311650bd0")
 			(effects
@@ -984,7 +984,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D2"
-			(at -0.1 -2 360)
+			(at -0.1 -2 0)
 			(layer "F.SilkS")
 			(uuid "e9b3e95d-071d-40cb-810f-d429733b891c")
 			(effects
@@ -995,7 +995,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "6bc02b7e-6795-4dab-a45d-17a94e08fece")
 			(effects
@@ -1006,7 +1006,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cdfebe96-daa1-4775-8525-90ef8a8fdd11")
@@ -1018,7 +1018,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5205f6dc-ffd4-464e-ae41-86f930185b22")
@@ -1030,7 +1030,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "80bb528f-657e-49a8-9489-dc926c773019")
@@ -1167,7 +1167,7 @@
 			(uuid "6c4fbe6f-3a48-492c-9ca5-158c4a2c6d0e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "a32244b2-9d4d-4c85-af0a-b6f55f6f5c9a")
 			(effects
@@ -1216,7 +1216,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R8"
-			(at 0 -1.82 360)
+			(at 0 -2.145 0)
 			(layer "F.SilkS")
 			(uuid "b6841baf-3ebb-4bec-8d59-e9ad90b15731")
 			(effects
@@ -1227,7 +1227,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "95c64c66-4cfb-438a-91cd-0728ae975cf6")
 			(effects
@@ -1382,7 +1382,7 @@
 			(uuid "1d4f348b-56a4-456c-89b7-7de9c32d17c1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "63f3a31a-4dbd-4bd9-87ff-78792960b8fc")
 			(effects
@@ -1429,7 +1429,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R7"
-			(at 0 -1.82 360)
+			(at 0 -2.145 0)
 			(layer "F.SilkS")
 			(uuid "e116dfd3-b785-4887-830c-8d81f83ef0b9")
 			(effects
@@ -1440,7 +1440,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "d59ef1a1-5fc1-412a-b9b5-4b8095d85c7d")
 			(effects
@@ -1595,7 +1595,7 @@
 			(uuid "0167a082-1e55-41df-918b-d4463cf8faf5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "04e90df4-446a-400a-949d-d0dc04991764")
 			(effects
@@ -1642,7 +1642,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R3"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(uuid "f06b9999-070f-4fb5-9792-8f82003697d0")
 			(effects
@@ -1653,7 +1653,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "d8d7fd49-cbaf-4bcc-ae13-01833dbf6292")
 			(effects
@@ -1664,7 +1664,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "affe0fda-8874-45a9-8bde-ffc1178d1cc2")
@@ -1676,7 +1676,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3454c4c6-bd55-4413-a8c7-cc06dba50dd4")
@@ -1688,7 +1688,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4a327a15-9635-444a-b618-cbb8aaf1e6dd")
@@ -1805,7 +1805,7 @@
 			(uuid "5c2212f5-fccf-40b2-8c4f-be5def392309")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "da95d52d-657f-40fa-bc0e-609d3e9e5131")
 			(effects
@@ -1863,7 +1863,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d56317a2-01d0-4d80-8f47-d8700db60623")
@@ -1875,7 +1875,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4dd4a978-8a17-4ec8-ab74-0e60ae1800c1")
@@ -1887,7 +1887,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4fbfd0c7-0aac-4e99-b602-2a76ee06b1af")
@@ -1899,7 +1899,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "efcbf806-2cd1-41e8-832c-ee35712b4426")
@@ -2078,7 +2078,7 @@
 			(uuid "b3a7a81a-6a34-45c5-8aa2-de212698e96f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "4a5bfd49-df8d-4842-a658-bfe30b24568e")
 			(effects
@@ -2151,7 +2151,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4fb62f0c-2b35-4e34-85e5-22203666ecbf")
@@ -2163,7 +2163,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a748cb00-ee89-4b61-b01e-921e5bab2215")
@@ -2175,7 +2175,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "13700ee1-7ef4-425a-8dfc-1f083438428a")
@@ -2187,7 +2187,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a66b6240-2431-4085-8b86-432e1c662bf0")
@@ -2366,7 +2366,7 @@
 			(uuid "834a5acc-1953-4e48-bf12-c74133a8e9d9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "aff90e28-9b24-4f4d-a1ba-68802dc22f8a")
 			(effects
@@ -2428,7 +2428,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D3"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(uuid "e3b7b1ad-17a5-498e-8c8a-3178d9264d03")
 			(effects
@@ -2439,7 +2439,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "1a3094c8-7c54-4c76-aa34-e3bda908fb5d")
 			(effects
@@ -2450,7 +2450,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "560dd529-242a-4980-82b4-bb112414d10a")
@@ -2462,7 +2462,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dc2edf5f-760d-413e-8708-06bb5a2ff48d")
@@ -2474,7 +2474,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c46998de-f7c6-4fa5-a66b-408a5a4737fd")
@@ -2611,7 +2611,7 @@
 			(uuid "3d0c2d53-6ae5-45e5-9074-1840c04a8769")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "4d620c4c-7eea-42b4-abed-a7f94eb5e917")
 			(effects
@@ -2660,7 +2660,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R2"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(uuid "706b3c4a-7b74-4508-a547-b1f5895e4306")
 			(effects
@@ -2671,7 +2671,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "1142a525-1c28-41b2-9fc3-9e8da0d6faf1")
 			(effects
@@ -2682,7 +2682,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "49e40395-cb8c-4648-8a3f-9b7537565959")
@@ -2694,7 +2694,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "464e1247-eea7-4110-85c2-081501690a7e")
@@ -2706,7 +2706,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "81d2ef3e-bef6-49dd-b685-8ee34128e1bb")
@@ -2823,7 +2823,7 @@
 			(uuid "57bd7c8a-7dfa-4d8f-a736-50d3936c6c0b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "1356d649-c735-438f-94a8-d4933b4fa1f1")
 			(effects
@@ -2881,7 +2881,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d3ff5edf-759f-4abd-9773-df4e61a19c02")
@@ -2893,7 +2893,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9c5ef28c-3e3a-46b2-b75a-b1609e1069ac")
@@ -2905,7 +2905,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "241232f0-e93a-4607-83eb-9285147c6c63")
@@ -2917,7 +2917,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bee22bb2-1faa-43c4-af53-c21c4c47bf9d")
@@ -3096,7 +3096,7 @@
 			(uuid "a313c0ad-f28e-44fb-b29c-c80f687f4f37")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "c7898975-6a3a-4a5c-9a3f-ec4bb44b13f5")
 			(effects
@@ -3158,7 +3158,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D8"
-			(at 0 -1.82 360)
+			(at -0.005 -2.145 0)
 			(layer "F.SilkS")
 			(uuid "e2800901-3e53-43e9-9390-5cca8518d93a")
 			(effects
@@ -3169,7 +3169,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "7c6d56fd-c520-4872-9e3f-a27439541183")
 			(effects
@@ -3344,7 +3344,7 @@
 			(uuid "01a8bb1a-36df-4801-97ee-0a1c672477e4")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "551d0017-22ff-4346-a380-b2b1b761465f")
 			(effects
@@ -3393,7 +3393,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R6"
-			(at 0 -1.82 360)
+			(at 0 -2.17 0)
 			(layer "F.SilkS")
 			(uuid "9a437f28-1359-4e5b-b033-0e98ed9bbc9b")
 			(effects
@@ -3404,7 +3404,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "76afb340-4e4f-4edc-b238-a9f4062cfc3d")
 			(effects
@@ -3559,7 +3559,7 @@
 			(uuid "e4768679-5bc8-4e8a-a65e-cd7a99c0138b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "ff87acfc-f5e2-4f7f-98f5-936c39769eec")
 			(effects
@@ -3617,7 +3617,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "75b89021-0d05-4795-ab56-8b7f439db33c")
@@ -3629,7 +3629,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "bb11ecc0-d1ea-438b-908f-b44227a85357")
@@ -3641,7 +3641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "86f6b54d-a637-4acf-a2f8-59c58cf26206")
@@ -3653,7 +3653,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "80d6079d-6d71-4d82-b0d0-2203147a7f07")
@@ -3832,7 +3832,7 @@
 			(uuid "94fec603-f4ea-4693-8ca8-d66e944b6dbc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "cdb5d034-5948-4de3-9a37-c7294fa06859")
 			(effects
@@ -4020,7 +4020,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "197b9902-e125-47eb-b8ab-5e31674028f5")
@@ -4032,7 +4032,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6245048a-b60a-419f-a3b4-aab37f902014")
@@ -4044,7 +4044,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "31128d45-6eb4-468b-9f00-8dc6ff3744a0")
@@ -4056,7 +4056,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2d24545b-88e4-4332-83e0-91a4367c30cc")
@@ -4235,7 +4235,7 @@
 			(uuid "e625c526-9b54-4af3-9c11-5f023f1a8187")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "c8d6a234-a72a-4b5a-bf2b-11025df736ca")
 			(effects
@@ -4418,7 +4418,8 @@
 			(effects
 				(font
 					(size 1 1)
-					(thickness 0.15)
+					(thickness 0.2)
+					(bold yes)
 				)
 			)
 		)
@@ -4810,7 +4811,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D1"
-			(at 0 -2 360)
+			(at 0 -2 0)
 			(layer "F.SilkS")
 			(uuid "08c15835-f6ed-472e-8951-72717d6c1af5")
 			(effects
@@ -4821,7 +4822,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "a29fd318-0550-42e9-a2d1-d36122a4b4cd")
 			(effects
@@ -4832,7 +4833,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4b0480e8-75f7-4289-aec5-ac51417e8d09")
@@ -4844,7 +4845,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "cf71b5fd-9452-4540-b821-8bd45a8b48e1")
@@ -4856,7 +4857,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c88b5c3f-4699-4cf1-8dae-f86d853dc02e")
@@ -4993,7 +4994,7 @@
 			(uuid "b6e1c18d-9f0f-44f7-a022-bdef563c483f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d1e9a361-363e-44a6-8bcb-b9f9353391e3")
 			(effects
@@ -5053,7 +5054,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e1d4ed19-d66e-4736-9d2e-ec5ae49e2e4f")
@@ -5065,7 +5066,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "81963e0b-0996-443a-9ae4-cf7749a78de3")
@@ -5077,7 +5078,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "997ebf19-5ed0-47c3-8f12-912cac63816a")
@@ -5089,7 +5090,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "7a3fd492-2b90-4d1c-ad18-e540ba19dadd")
@@ -5268,7 +5269,7 @@
 			(uuid "324b701f-ae15-4394-8e0f-e0fd82e72e76")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "38d7dbcd-6ec1-409c-a9ac-209ead35bb63")
 			(effects
@@ -5341,7 +5342,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 2 9 360)
+			(at 2 9 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7b638ace-fe78-4cfe-9e47-f60ecd14f5c8")
@@ -5353,7 +5354,7 @@
 			)
 		)
 		(property "Footprint" "Borniers:5442170"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9bdcce03-32e6-4dc8-b6e7-9300d9d7d0c0")
@@ -5365,7 +5366,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d5eafb5f-e1ae-4c93-9c35-0de15b8b701d")
@@ -5377,7 +5378,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "92def609-b8a0-4745-aed6-9d642a4ada5d")
@@ -5556,7 +5557,7 @@
 			(uuid "4bc11e7f-67c1-4904-9fa7-7e13e36e8ecb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.5 7 360)
+			(at 2.5 7 0)
 			(layer "F.Fab")
 			(uuid "6192a1ea-65f1-4cc5-99f2-9479d184d9df")
 			(effects
@@ -5618,7 +5619,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D4"
-			(at 0 -1.82 360)
+			(at 0 -2.0225 0)
 			(layer "F.SilkS")
 			(uuid "165793ad-e959-4b79-9ae0-44b8e6704598")
 			(effects
@@ -5629,7 +5630,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "a17117f4-869b-4d1a-b871-07a20bdcde4e")
 			(effects
@@ -5804,7 +5805,7 @@
 			(uuid "826064b4-ff60-45df-b221-e1835d5a9a87")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "91e68d78-5e67-4360-ac4b-c709ee907740")
 			(effects
@@ -5853,7 +5854,7 @@
 		(descr "LED SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D5"
-			(at 0 -2 360)
+			(at -0.155 -2.17 0)
 			(layer "F.SilkS")
 			(uuid "d6acc4d1-5e34-4567-bc9a-e8926b332da7")
 			(effects
@@ -5864,7 +5865,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "a2b803be-8ad7-4d91-960e-a3d0c58af744")
 			(effects
@@ -5875,7 +5876,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4f059408-ba97-4b38-89ad-987a5c912711")
@@ -5887,7 +5888,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f9569e2c-c7ee-4360-a3a6-92612c80d3e4")
@@ -5899,7 +5900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "4a661f94-0258-452a-94a0-115afa05ee4e")
@@ -6036,7 +6037,7 @@
 			(uuid "63d8ff6f-b6cd-4c77-b7c9-d07cceac2e5c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "256b342c-3b4d-474a-bc5f-a69f1cb9c439")
 			(effects
@@ -6085,7 +6086,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R4"
-			(at 0 -1.82 360)
+			(at 0 -2.0225 0)
 			(layer "F.SilkS")
 			(uuid "8eae6e8c-c3b1-4882-aedf-ff768ec3884c")
 			(effects
@@ -6096,7 +6097,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "345243db-40ff-45a9-8e2d-3aec14f9a1d2")
 			(effects
@@ -6251,7 +6252,7 @@
 			(uuid "7f1ddbcd-3f53-4884-abba-eb9819d72cd6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "56816185-f7a5-4da0-8d91-5d8964bc9a99")
 			(effects
@@ -6309,7 +6310,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "d9fad9a8-4b45-4524-8e2e-406d31a05f34")
 			(effects
@@ -6320,7 +6321,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f3b0c72c-abd4-48c7-b679-7b4da155101e")
@@ -6332,7 +6333,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "d3815bde-780c-461a-a49f-990a604c9dd3")
@@ -6344,7 +6345,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f519aa1c-56b4-420e-8b03-cfe2f76b6245")
@@ -6461,7 +6462,7 @@
 			(uuid "273509c9-9172-4a65-8769-dfc0cb1a952a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "54a7a2b5-1f28-4957-aa24-e8c1ed69af58")
 			(effects
@@ -6623,7 +6624,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R5"
-			(at 0 -2 360)
+			(at 0 -2.17 0)
 			(layer "F.SilkS")
 			(uuid "be9a6839-c0cc-4d36-8985-1308096b5c8d")
 			(effects
@@ -6634,7 +6635,7 @@
 			)
 		)
 		(property "Value" "1K"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "c49c7cff-71af-4f0e-b546-e60f6d331c30")
 			(effects
@@ -6645,7 +6646,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "277e9f6d-3216-4b05-b916-0bc0b4999ae1")
@@ -6657,7 +6658,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "1bd8e9d7-cdac-4a54-b337-e2c1509a837c")
@@ -6669,7 +6670,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "f884bace-d900-459e-8ab3-cb1129b422cb")
@@ -6786,7 +6787,7 @@
 			(uuid "1b48902c-3850-4032-8694-c80a7da7248b")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5f55c00f-a29c-4f39-b65f-108f1c7b5d0b")
 			(effects
@@ -6911,7 +6912,7 @@
 		(uuid "b254a085-8d5c-4337-abfc-81dbe2c20427")
 	)
 	(gr_text "3V_4"
-		(at 142.5 103.5 0)
+		(at 146.3675 60.0075 180)
 		(layer "F.SilkS")
 		(uuid "28937919-656d-4a59-b361-3f5e834122e5")
 		(effects
@@ -6924,7 +6925,7 @@
 		)
 	)
 	(gr_text "5V_3"
-		(at 131.5 59.5 180)
+		(at 127 103.505 0)
 		(layer "F.SilkS")
 		(uuid "36384475-97e2-49c6-8830-ad018f08f0a6")
 		(effects
@@ -6937,7 +6938,7 @@
 		)
 	)
 	(gr_text "3V_2"
-		(at 112.5 103.5 0)
+		(at 116.205 60.0075 180)
 		(layer "F.SilkS")
 		(uuid "6b8b7f1c-bf1e-45de-be4f-3e9a68e7b9b7")
 		(effects
@@ -6950,7 +6951,7 @@
 		)
 	)
 	(gr_text "${PROJECTNAME}\n${REVISION} / ${CURRENT_DATE}\n${COMPANY}"
-		(at 123 85.5 0)
+		(at 122.8725 78.74 180)
 		(layer "F.SilkS" knockout)
 		(uuid "6c49696b-975e-4a2b-87e0-317a0b7f25a8")
 		(effects
@@ -6963,7 +6964,7 @@
 		)
 	)
 	(gr_text "5V_4"
-		(at 146.5 59.5 180)
+		(at 141.9225 103.505 0)
 		(layer "F.SilkS")
 		(uuid "6d0529bd-5096-4c58-ac84-71c5da66e412")
 		(effects
@@ -6976,7 +6977,7 @@
 		)
 	)
 	(gr_text "5V_1"
-		(at 101.5 59.5 180)
+		(at 97.155 103.505 0)
 		(layer "F.SilkS")
 		(uuid "90559899-5e8a-4510-89e5-e126d6be1b01")
 		(effects
@@ -6989,7 +6990,7 @@
 		)
 	)
 	(gr_text "5V_2\n"
-		(at 116.5 59.5 180)
+		(at 111.76 103.505 0)
 		(layer "F.SilkS")
 		(uuid "a66be953-28e2-4617-802d-45e7b8edd27f")
 		(effects
@@ -7002,7 +7003,7 @@
 		)
 	)
 	(gr_text "3V_3"
-		(at 127.5 103.5 0)
+		(at 131.1275 60.0075 180)
 		(layer "F.SilkS")
 		(uuid "c1911f71-a7b9-4a65-9f11-b723bef932d3")
 		(effects
@@ -7015,7 +7016,7 @@
 		)
 	)
 	(gr_text "3V_1"
-		(at 97.5 103.5 0)
+		(at 101.2825 60.0075 180)
 		(layer "F.SilkS")
 		(uuid "ddfaabb0-f482-4be2-a2c0-bf62c272c4af")
 		(effects

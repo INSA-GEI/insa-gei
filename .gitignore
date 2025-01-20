@@ -102,6 +102,11 @@ OldVersions/
 *.xz
 *.gz
 
+# Freecad
+*.step
+*.stl
+*.FCBak
+
 # Projects not included
 software/EntretienAuto/PDFsharp/testing/
 software/EntretienAuto/PDFsharp/samples/
